@@ -57,6 +57,7 @@ html, body {
 .icons:hover{
     -webkit-transform: scale(1.5);
     color: black;
+    cursor: pointer;
 }
 
 .pic{
