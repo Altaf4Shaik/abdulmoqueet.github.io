@@ -1,3 +1,11 @@
+window.onload = function () {
+
+    let date = new Date();
+    document.getElementById("copyright").innerHTML = "Abdul Moqueet &copy; Copyright "+date.getFullYear()+".";
+
+};
+
+
 function redirect (url) {
 
     setTimeout(function () {
