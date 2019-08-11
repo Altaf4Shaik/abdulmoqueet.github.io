@@ -1,6 +1,6 @@
 window.onload = function () {
 
-    let date = new Date();
+    var date = new Date();
     document.getElementById("copyright").innerHTML = "Abdul Moqueet &copy; Copyright "+date.getFullYear()+".";
 
 };
