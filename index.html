@@ -5,21 +5,21 @@
     <title>Abdul Moqueet | Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Quicksand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="script/main.js"></script>
+    <link rel="stylesheet" href="src/main.css">
+    <script src="src/main.js"></script>
 </head>
 <body>
 
 <div class="container">
     <div class="top">
-        <img class="pic" src="https://dl.dropbox.com/s/14t6p0iao927jva/My%20pic.jpg" alt="profile pic">
+        <img class="pic" src="src/images/my_pic.jpg" alt="profile pic">
         <div class="top-text">
             <p class="name-text">I'm Abdul Moqueet</p>
             <p class="profession-text">I'm an Android, Java & Web Developer</p>
             <div class="socials">
                 <i class="fab fa-github icons" onclick="redirect('https://github.com/Abdul-Moqueet')"></i>
                 <i class="fab fa-stack-overflow icons" onclick="redirect('https://stackoverflow.com/users/6912209/abdul-moqueet')"></i>
-                <i class="fab fa-linkedin icons" onclick="redirect('https://www.linkedin.com/in/abdul-moqueet-9b1382191/')"></i>
+                <i class="fab fa-linkedin icons" onclick="redirect('https://www.linkedin.com/in/abdul-moqueet/')"></i>
                 <i class="fas fa-envelope icons"></i>
                 <i class="fab fa-youtube icons" onclick="redirect('https://www.youtube.com/c/earthnetworken')"></i>
                 <i class="fab fa-instagram icons" onclick="redirect('https://www.instagram.com/im_abdul_moqueet/')"></i>
@@ -34,9 +34,9 @@
             <p class="about-text">I'm an <b>Android</b>, <b>Java</b> & <b>Web Developer</b> living in Gaya, Bihar
                 (India). I spend my days with my hands in many different areas of software development from back end
                 programming <b>(Java, C/C++, SQL, SQL-Lite)</b> to front end programming <b>(Android, HTML, CSS, & Javascript)</b>, UI/UX & Android App Development.</p>
-
+            <br>
             <div class="download-wrap">
-                <div class="download-resume"><i class="far fa-file-pdf"></i> Download Resume</div>
+                <a href="#">Download Resume <i class="fas fa-cloud-download-alt"></i></a>
             </div>
         </div>
 
@@ -53,10 +53,16 @@
             <div class="lang">PhotoShop</div>
         </div>
 
-        <div class="projects">
-            <p class="project-title">My Projects</p>
-            <div class="line"></div><br>
-            <div class="project">To Be Added</div>
+        <p class="my-project-text">My Projects</p>
+        <div class="line" style="width: 210px; margin-bottom: 10px"></div><br>
+
+        <div class="projects-container">
+            <div class="project-pic"></div>
+            <div class="project-desc-container">
+                <p class="project-name">Institute Management System</p><br>
+                <p class="project-desc">This is a project about <strong>Institute Management System</strong>, using JavaFx and SqLite Database.</p>
+                <div class="git-button"><a href="https://github.com/Abdul-Moqueet/Institute-Management-System" target="_blank">Source Code <i class="fas fa-arrow-up"></i></a></div>
+            </div>
         </div>
 
     </div>
