@@ -205,9 +205,6 @@ footer p{
         margin-top: 26px;
         width:120px;
     }
-    .contents{
-        width: 350px;
-    }
 }
 
 @media only screen and (max-width: 460px) {
@@ -218,16 +215,16 @@ footer p{
     .socials{
         margin-left: 12px;
     }
+
+    .contents{
+        width: 85%;
+    }
 }
 
 @media only screen and (max-width: 420px) {
     .pic {
         margin-top: 36px;
         width:100px;
-    }
-
-    .contents {
-        width: 300px;
     }
 
 }
@@ -239,9 +236,6 @@ footer p{
     .socials{
         margin-left: 0;
     }
-    .contents {
-        width: 270px;
-    }
 }
 
 @media only screen and (max-width: 352px) {
@@ -249,8 +243,12 @@ footer p{
         margin-top: 46px;
         width:80px;
     }
-    .contents {
-        width: 250px;
+}
+
+@media only screen and (max-width: 332px) {
+    .pic {
+        margin-top: 46px;
+        width:60px;
     }
 }
 
