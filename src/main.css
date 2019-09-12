@@ -13,6 +13,7 @@ html, body {
     margin: auto;
     width: 100vw;
     max-width: 800px;
+    background-color: #f9f9f9;
     box-shadow: 0 0 20px rgba(208, 83, 255, 1);
 }
 
@@ -131,16 +132,16 @@ html, body {
 }
 
 .projects-container{
-    height: 450px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
     background-color: white;
     border-radius: 10px;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.4);
+    margin-bottom: 40px;
 }
 
 .project-pic{
     background-image: url("images/institute_management.png");
     background-size: cover;
-    background-position: right;
+    background-position: center;
     width: 100%;
     height: 250px;
     background-color: #ff3969;
@@ -152,10 +153,8 @@ html, body {
 .project-desc-container{
     text-align: center;
     width: 95%;
-    height: 100px;
     font-family: 'Quicksand', sans-serif;
     margin: auto;
-    background-color: white;
 }
 
 .project-name{
@@ -168,14 +167,14 @@ html, body {
 }
 
 .git-button a{
-    margin-top: 30px;
     color: white;
-    background-color: #9d2ecc;
-    display: inline-block;
+    background-color: #ff3969;
     padding: 10px;
     border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.4);
     text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
 footer{
