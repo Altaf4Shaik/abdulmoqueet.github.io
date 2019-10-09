@@ -1,7 +1,7 @@
 window.onload = function () {
 
     var date = new Date();
-    document.getElementById("copyright").innerHTML = "Abdul Moqueet &copy; Copyright "+date.getFullYear()+".";
+    document.getElementById("copyright").innerHTML = "&copy; Abdul Moqueet | All Right Reserved "+date.getFullYear()+".";
 
 };
 
