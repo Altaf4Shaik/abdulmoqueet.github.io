@@ -129,7 +129,9 @@ html, body {
     width: 180px;
     background-color: #dedede;
     border-radius: 6px;
-     box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+    border-left: 4px #9d2ecc solid;
+    border-right: 4px #9d2ecc solid;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
 }
 
 .projects-container{
