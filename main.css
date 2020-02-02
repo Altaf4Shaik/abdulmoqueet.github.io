@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.container{
+    margin: auto;
+    width: 100vw;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 20px rgba(208, 83, 255, 1);
+}
+
+.top{
+    margin: auto;
+    width: 100vw;
+    max-width: 800px;
+    height: 210px;
+    background-image: linear-gradient(100deg, #ff3969, #9d2ecc);
+    clip-path: polygon(100% 0, 100% 75%, 15% 100%, 0 75%, 0 0);
+}
+
+.top-text{
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 50px;
+    padding-left: 20px;
+    color: white;
+}
+
+.name-text{
+    font-size: 2em;
+    letter-spacing: 0.6px;
+}
+
+.profession-text{
+    margin-top: 5px;
+    padding-left: 5px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.socials{
+    font-size: 24px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.icons{
+    margin-right: 5px;
+    -webkit-transition: 0.5s ease-in-out;
+}
+
+.icons:hover{
+    -webkit-transform: scale(1.5);
+    color: black;
+    cursor: pointer;
+}
+
+.pic{
+    margin-top: 7px;
+    margin-right: 20px;
+    width: 150px;
+    float: right;
+    border-radius: 50%;
+}
+
+.contents{
+    width: 400px;
+    margin: auto;
+}
+
+.about, .skills{
+    margin: 50px auto;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.about-me, .skills-title, .my-project-text{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.my-project-text{
+    margin: auto;
+    text-align: center;
+}
+
+.line{
+    margin: auto;
+    width: 170px;
+    height: 3px;
+    background-image: linear-gradient(100deg, #ff3969, #9d2ecc);
+}
+
+.about-text{
+    margin-top: 15px;
+    text-align: justify;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1em;
+}
+
+.download-wrap{
+    margin-top: 20px;
+}
+
+.download-wrap a{
+    text-decoration: none;
+    background-color: #9d2ecc;
+    padding: 10px;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+.skills .line{
+    width: 120px;
+}
+
+.lang{
+    font-size: 20px;
+    margin: 8px auto;
+    padding: 5px;
+    width: 180px;
+    background-color: #dedede;
+    border-radius: 6px;
+    border-left: 4px #9d2ecc solid;
+    border-right: 4px #9d2ecc solid;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
+}
+
+.projects-container{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.4);
+    margin-bottom: 40px;
+}
+
+.project-pic{
+    background-image: url("src/images/institute_management.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px;
+    background-color: #ff3969;
+    margin: auto auto 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.project-desc-container{
+    text-align: center;
+    width: 95%;
+    font-family: 'Quicksand', sans-serif;
+    margin: auto;
+}
+
+.project-name{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.project-desc{
+    font-style: italic;
+}
+
+.git-button a{
+    color: white;
+    background-color: #ff3969;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+footer{
+    height: 200px;
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(100deg, #ff3969, #9d2ecc);
+    clip-path: polygon(100% 0, 100% 75%, 15% 100%, 0 75%, 0 0);
+    transform: rotate(180deg);
+}
+
+footer div{
+    text-align: center;
+    transform: rotate(180deg);
+}
+
+footer p{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+@media only screen and (max-width: 805px) {
+    .pic {
+        margin-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 495px) {
+    .pic {
+        margin-top: 26px;
+        width:120px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .name-text{
+        font-size: 1.7em;
+    }
+
+    .socials{
+        margin-left: 12px;
+    }
+
+    .contents{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .pic {
+        margin-top: 36px;
+        width:100px;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .name-text{
+        font-size: 1.4em;
+    }
+    .socials{
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 352px) {
+    .pic {
+        margin-top: 46px;
+        width:80px;
+    }
+}
+
+@media only screen and (max-width: 332px) {
+    .pic {
+        margin-top: 46px;
+        width:60px;
+    }
+}
+
+@media only screen and (max-width: 319px) {
+    .top-text{
+        padding-top: 0;
+    }
+}
