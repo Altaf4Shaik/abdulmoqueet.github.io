@@ -1,121 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
-    <title>Abdul Moqueet | Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Quicksand&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="src/main.css">
-    <script src="src/main.js"></script>
-</head>
-<body>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+        <title>Abdul Moqueet | Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Quicksand&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
 
-<div class="container">
-    <div class="top">
-        <img class="pic" src="src/images/my_pic.jpg" alt="profile pic">
-        <div class="top-text">
-            <p class="name-text">I'm Abdul Moqueet</p>
-            <p class="profession-text">I'm an Android, Java &amp; Web Developer</p>
-            <div class="socials">
-                <i class="fab fa-github icons" onclick="redirect('https://github.com/Abdul-Moqueet')"></i>
-                <i class="fab fa-stack-overflow icons" onclick="redirect('https://stackoverflow.com/users/6912209/abdul-moqueet')"></i>
-                <i class="fab fa-linkedin icons" onclick="redirect('https://www.linkedin.com/in/abdul-moqueet/')"></i>
-                <i class="fas fa-envelope icons"></i>
-                <i class="fab fa-youtube icons" onclick="redirect('https://www.youtube.com/c/earthnetworken')"></i>
-                <i class="fab fa-instagram icons" onclick="redirect('https://www.instagram.com/im_abdul_moqueet/')"></i>
-            </div>
-        </div>
-    </div>
-
-    <div class="contents">
-        <div class="about">
-            <p class="about-me">About Me</p>
-            <div class="line"></div>
-            <p class="about-text">I'm an <b>Android</b>, <b>Java</b> &amp; <b>Web Developer</b> living in India. I spend my days with my hands in many different areas of software development from back end
-                programming <b>(Java, C/C++, SQL, SQL-Lite)</b> to front end programming <b>(UI/UX, Android, HTML, CSS, &amp; Javascript)</b>.</p>
-            <br>
-            <div class="download-wrap">
-                <a href="" onclick="alert('I am not a fool 🤣')">Download Resume <i class="fas fa-cloud-download-alt"></i></a>
-            </div>
-        </div>
-
-        <div class="skills">
-            <p class="skills-title">Skills</p>
-            <div class="line"></div><br>
-            <div class="lang" data-aos="zoom-in-up">Android</div>
-            <div class="lang r-lang" data-aos="zoom-in-up">Java</div>
-            <div class="lang" data-aos="zoom-in-up">Java Script</div>
-            <div class="lang r-lang" data-aos="zoom-in-up">CSS</div>
-            <div class="lang" data-aos="zoom-in-up">HTML</div>
-            <div class="lang r-lang" data-aos="zoom-in-up">C-Lang</div>
-            <div class="lang" data-aos="zoom-in-up">C++</div>
-            <div class="lang r-lang" data-aos="zoom-in-up">PhotoShop</div>
-        </div>
-
-        <p class="my-project-text">My Projects</p>
-        <div class="line" style="width: 210px; margin-bottom: 10px"></div><br>
-
-        <div class="projects-container" data-aos="zoom-in-right">
-            <div class="project-pic" style="background-position: right;"></div>
-            <div class="project-desc-container">
-                <p class="project-name">Institute Management System</p><br>
-                <p class="project-desc">This is a project about <strong>Institute Management System</strong>, using <b>JavaFx</b> as frontend and <b>SqLite</b> Database as backend.</p>
-                <br>
-                <div class="git-button">
-                    <a href="https://github.com/Abdul-Moqueet/Institute-Management-System" target="_blank">Source Code <i class="fas fa-arrow-up"></i></a>
+        <div class="container">
+            <div class="top">
+                <img class="pic" src="src/images/my_pic.jpg" alt="profile pic">
+                <div class="top-text">
+                    <p class="name-text">I'm Abdul Moqueet</p>
+                    <p class="profession-text">I'm an Android, Java &amp; Web Developer</p>
+                    <div class="socials">
+                        <i class="fab fa-github icons" onclick="redirect('https://github.com/Abdul-Moqueet')"></i>
+                        <i class="fab fa-stack-overflow icons" onclick="redirect('https://stackoverflow.com/users/6912209/abdul-moqueet')"></i>
+                        <i class="fab fa-linkedin icons" onclick="redirect('https://www.linkedin.com/in/abdul-moqueet/')"></i>
+                        <i class="fas fa-envelope icons"></i>
+                        <i class="fab fa-youtube icons" onclick="redirect('https://www.youtube.com/c/earthnetworken')"></i>
+                        <i class="fab fa-instagram icons" onclick="redirect('https://www.instagram.com/im_abdul_moqueet/')"></i>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="projects-container" data-aos="zoom-in-left">
-            <div class="project-pic" style='background-image: url("src/images/find_my_phone.png")'></div>
-            <div class="project-desc-container">
-                <p class="project-name">Find My Phone</p><br>
-                <p class="project-desc">This is an Android App <strong>Find My Phone</strong>, using <b>XML</b> as frontend and <b>JAVA</b> as backend. I have used <b>android.telephony api.</b> This app can find a lost with just a SMS</p>
-                <br>
-                <div class="git-button">
-                    <a href="https://github.com/Abdul-Moqueet/FindMyPhone" target="_blank">Source Code <i class="fas fa-arrow-up"></i></a>
+            <div class="contents">
+                <div class="about">
+                    <p class="about-me">About Me</p>
+                    <div class="line"></div>
+                    <p class="about-text">I'm an <b>Android</b>, <b>Java</b> &amp; <b>Web Developer</b> living in India. I spend my days with my hands in many different areas of software development from back end
+                        programming <b>(Java, C/C++, SQL, SQL-Lite)</b> to front end programming <b>(UI/UX, Android, HTML, CSS, &amp; Javascript)</b>.</p>
+                    <br>
+                    <div class="download-wrap">
+                        <a href="" onclick="alert('I am not a fool 🤣')">Download Resume <i class="fas fa-cloud-download-alt"></i></a>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="projects-container" data-aos="zoom-in-right">
-            <div class="project-pic" style='background-image: url("src/images/library_management.png")'></div>
-            <div class="project-desc-container">
-                <p class="project-name">Library Management System</p><br>
-                <p class="project-desc">This is a project about <strong>Library Management System</strong>, using <b>JavaFx</b> as frontend and <b>Oracle</b> Database as backend.</p>
-                <br>
-                <div class="git-button">
-                    <a href="https://github.com/Abdul-Moqueet/Library-Management-System" target="_blank">Source Code <i class="fas fa-arrow-up"></i></a>
+                <div class="skills">
+                    <p class="skills-title">Skills</p>
+                    <div class="line"></div><br>
+                    <div class="lang" data-aos="zoom-in-up">Android</div>
+                    <div class="lang r-lang" data-aos="zoom-in-up">Java</div>
+                    <div class="lang" data-aos="zoom-in-up">Java Script</div>
+                    <div class="lang r-lang" data-aos="zoom-in-up">CSS</div>
+                    <div class="lang" data-aos="zoom-in-up">HTML</div>
+                    <div class="lang r-lang" data-aos="zoom-in-up">C-Lang</div>
+                    <div class="lang" data-aos="zoom-in-up">C++</div>
+                    <div class="lang r-lang" data-aos="zoom-in-up">PhotoShop</div>
                 </div>
-            </div>
-        </div>
-        
-        <div class="projects-container" data-aos="zoom-in-left">
-            <div class="project-pic" style='background-image: url("src/images/anime-web.png");  background-position: top;'></div>
-            <div class="project-desc-container">
-                <p class="project-name">My Anime Web</p><br>
-                <p class="project-desc">This is a fully responsive anime website. <strong>My Anime Web</strong>, using <b>HTML, CSS</b> as frontend and <b>Javascript</b> as backend.</p>
-                <br>
-                <div class="git-button">
-                    <a href="https://github.com/Abdul-Moqueet/My-Anime-Web" target="_blank">Source Code <i class="fas fa-arrow-up"></i></a>
+
+                <p class="my-project-text">My Projects</p>
+                <div class="line" style="width: 210px; margin-bottom: 10px"></div><br>
+
+                <div class="projects-container" data-aos="zoom-in-right">
+                    <div class="project-pic" style="background-position: right;"></div>
+                    <div class="project-desc-container">
+                        <p class="project-name">Institute Management System</p><br>
+                        <p class="project-desc">This is a project about <strong>Institute Management System</strong>, using <b>JavaFx</b> as frontend and <b>SqLite</b> Database as backend.</p>
+                        <br>
+                        <div class="git-button">
+                            <a href="https://github.com/Abdul-Moqueet/Institute-Management-System" target="_blank">Source Code <i class="fas fa-arrow-up"></i></a>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="projects-container" data-aos="zoom-in-left">
+                    <div class="project-pic" style='background-image: url("src/images/find_my_phone.png")'></div>
+                    <div class="project-desc-container">
+                        <p class="project-name">Find My Phone</p><br>
+                        <p class="project-desc">This is an Android App <strong>Find My Phone</strong>, using <b>XML</b> as frontend and <b>JAVA</b> as backend. I have used <b>android.telephony api.</b> This app can find a lost with just a SMS</p>
+                        <br>
+                        <div class="git-button">
+                            <a href="https://github.com/Abdul-Moqueet/FindMyPhone" target="_blank">Source Code <i class="fas fa-arrow-up"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects-container" data-aos="zoom-in-right">
+                    <div class="project-pic" style='background-image: url(src/images/live_currency_converter.png);
+                    background-position: top;'></div>
+                    <div class="project-desc-container">
+                        <p class="project-name">Live Currency Converter</p><br>
+                        <p class="project-desc">This is an Android App <strong>Live Currency Converter</strong>, using <b>XML</b> as frontend and <b>JAVA</b> as backend.</p>
+                        <br>
+                        <div class="git-button">
+                            <a href="https://github.com/Abdul-Moqueet/Live-Currency-Converter" target="_blank">Source Code <i class="fas fa-arrow-up"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="projects-container" data-aos="zoom-in-left">
+                    <div class="project-pic" style='background-image: url("src/images/library_management.png")'></div>
+                    <div class="project-desc-container">
+                        <p class="project-name">Library Management System</p><br>
+                        <p class="project-desc">This is a project about <strong>Library Management System</strong>, using <b>JavaFx</b> as frontend and <b>Oracle</b> Database as backend.</p>
+                        <br>
+                        <div class="git-button">
+                            <a href="https://github.com/Abdul-Moqueet/Library-Management-System" target="_blank">Source Code <i class="fas fa-arrow-up"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects-container" data-aos="zoom-in-right">
+                    <div class="project-pic" style='background-image: url("src/images/anime-web.png");  background-position: top;'></div>
+                    <div class="project-desc-container">
+                        <p class="project-name">My Anime Web</p><br>
+                        <p class="project-desc">This is a fully responsive anime website. <strong>My Anime Web</strong>, using <b>HTML, CSS</b> as frontend and <b>Javascript</b> as backend.</p>
+                        <br>
+                        <div class="git-button">
+                            <a href="https://github.com/Abdul-Moqueet/My-Anime-Web" target="_blank">Source Code <i class="fas fa-arrow-up"></i></a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
+
+            <footer>
+                <div>
+                    <p>Made with ❤ </p>
+                    <p id="copyright" style="padding-bottom: 50px"></p>
+                </div>
+            </footer>
+
         </div>
 
-    </div>
+        <script src="main.js"></script>
 
-
-    <footer>
-        <div>
-            <p>Made with ❤ </p>
-            <p id="copyright" style="padding-bottom: 50px"></p>
-        </div>
-    </footer>
-
-</div>
-
-</body>
+    </body>
 </html>
