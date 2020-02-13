@@ -162,7 +162,7 @@ html, body {
 
 .project-desc-container{
     text-align: center;
-    width: 95%;
+/*    padding-top: 1rem;*/
     font-family: 'Quicksand', sans-serif;
     margin: auto;
 }
@@ -170,10 +170,12 @@ html, body {
 .project-name{
     font-weight: bold;
     font-size: 1.3em;
+    background: #ffff00;s
 }
 
 .project-desc{
     font-style: italic;
+    padding: 1rem;
 }
 
 .git-button a{
