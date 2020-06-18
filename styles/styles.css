@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  background-color: #fff;
+  color: #c3c0bd;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-image: url(../img/page-bg.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+header .row {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+header .row .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .logo {
+  font-size: 200%;
+  color: #fff;
+}
+
+header .logo span {
+  color: #16C0F0;
+}
+
+header .main-nav {
+  list-style: none;
+}
+
+header .main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+header .main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 90%;
+  border-bottom: 2px #ffffff;
+}
+
+header .container {
+  margin-top: 40px;
+  font-size: 120%;
+}
+
+header .container .i-am {
+  margin-bottom: 1rem;
+}
+
+header .container .name {
+  font-size: 300%;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  margin-left: -5px;
+  margin-bottom: 1rem;
+}
+
+header .container .hire-me {
+  background-color: #16C0F0;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-size: 80%;
+  border-radius: 50px;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+header .container .desc {
+  color: #ffffff;
+}
+
+header .container .desc span {
+  color: #16C0F0;
+}
+/*# sourceMappingURL=styles.css.map */

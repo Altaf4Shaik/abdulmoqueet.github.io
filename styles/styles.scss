@@ -1,0 +1,91 @@
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fff;
+  color: $grey-color;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-image: url(../img/page-bg.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+
+  .row {
+    width: 1140px;
+    margin: 0 auto;
+
+    .flex {
+      display: flex;
+      margin-top: 40px;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .logo {
+    font-size: 200%;
+    color: #fff;
+    span {
+      color: $sky-color;
+    }
+  }
+
+  .main-nav {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin-left: 40px;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 90%;
+      border-bottom: 2px #ffffff;
+    }
+  }
+
+  .container {
+    margin-top: 40px;
+    font-size: 120%;
+    .i-am {
+      margin-bottom: 1rem;
+    }
+    .name {
+      font-size: 300%;
+      font-family: "Montserrat", sans-serif;
+      color: #ffffff;
+      margin-left: -5px;
+      margin-bottom: 1rem;
+    }
+    .hire-me {
+      background-color: $sky-color;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      font-size: 80%;
+      border-radius: 50px;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    .desc {
+      color: #ffffff;
+      span {
+        color: $sky-color;
+      }
+    }
+
+  }
+
+}
