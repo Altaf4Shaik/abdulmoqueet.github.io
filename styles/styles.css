@@ -124,15 +124,15 @@ header .container .hire-me {
   font-weight: bold;
   border-radius: 50px;
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 header .container .desc {
   color: #ffffff;
 }
 
-header .container .desc span {
-  color: #16C0F0;
+header .container .desc .typer {
+  color: #16C0F0 !important;
 }
 
 header .discover {

@@ -111,12 +111,12 @@ header {
       font-weight: bold;
       border-radius: 50px;
       display: inline-block;
-      margin-top: 1rem;
+      margin-top: 1.5rem;
     }
     .desc {
       color: #ffffff;
-      span {
-        color: $sky-color;
+      .typer {
+        color: $sky-color !important;
       }
     }
 
