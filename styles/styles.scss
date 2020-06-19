@@ -13,10 +13,19 @@ html {
   font-size: 20px;
   text-rendering: optimizeLegibility;
   font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
 }
 
+body {
+  overflow: hidden;
+}
+
+// ----------------------------------------------
+// Header
+// ----------------------------------------------
+
 header {
-  background-image: url(../img/page-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../img/top-bg.jpg);
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -36,6 +45,7 @@ header {
   .logo {
     font-size: 200%;
     color: #fff;
+    font-weight: 500;
     span {
       color: $sky-color;
     }
@@ -43,21 +53,44 @@ header {
 
   .main-nav {
     list-style: none;
+    
 
     li {
+      position: relative;
       display: inline-block;
       margin-left: 40px;
+      border-bottom: solid 2px transparent;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 90%;
+        font-weight: 400;
+        padding-bottom: 5px;
+        
+      }
+      &:hover::before{
+        transform: scale(1);
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        width: 110%;
+        height: 0;
+        bottom: -5px;
+        border-bottom: 2px solid $sky-color;
+        transform: scale(0);
+        transition: transform 0.3s ease-in-out;
+      }
     }
-    a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 90%;
-      border-bottom: 2px #ffffff;
-    }
+
   }
 
   .container {
-    margin-top: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 400;
     font-size: 120%;
     .i-am {
       margin-bottom: 1rem;
@@ -73,8 +106,9 @@ header {
       background-color: $sky-color;
       color: #ffffff;
       text-decoration: none;
-      padding: 0.5rem 1rem;
-      font-size: 80%;
+      padding: 0.6rem 1.5rem;
+      font-size: 60%;
+      font-weight: bold;
       border-radius: 50px;
       display: inline-block;
       margin-top: 1rem;
@@ -88,4 +122,31 @@ header {
 
   }
 
+  .discover{
+    position: absolute;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    right: 40px;
+    bottom: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 80%;
+    cursor: pointer;
+    .icon{
+      transform: rotate(180deg);
+      font-weight: normal;
+      animation: discover_arrow 1s infinite;
+    }
+  }
+
+}
+
+.nav-active{
+  color: $sky-color !important;
+}
+
+@keyframes discover_arrow {
+  50%{
+    transform:  rotate(180deg) translateY(10px);
+  }
 }

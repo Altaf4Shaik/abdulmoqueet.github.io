@@ -12,10 +12,16 @@ html {
   font-size: 20px;
   text-rendering: optimizeLegibility;
   font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+}
+
+body {
+  overflow: hidden;
 }
 
 header {
-  background-image: url(../img/page-bg.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.5))), url(../img/top-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../img/top-bg.jpg);
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -42,6 +48,7 @@ header .row .flex {
 header .logo {
   font-size: 200%;
   color: #fff;
+  font-weight: 500;
 }
 
 header .logo span {
@@ -53,19 +60,46 @@ header .main-nav {
 }
 
 header .main-nav li {
+  position: relative;
   display: inline-block;
   margin-left: 40px;
+  border-bottom: solid 2px transparent;
 }
 
-header .main-nav a {
+header .main-nav li a {
   color: #fff;
   text-decoration: none;
   font-size: 90%;
-  border-bottom: 2px #ffffff;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+
+header .main-nav li:hover::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+header .main-nav li::before {
+  position: absolute;
+  content: "";
+  width: 110%;
+  height: 0;
+  bottom: -5px;
+  border-bottom: 2px solid #16C0F0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 header .container {
-  margin-top: 40px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-weight: 400;
   font-size: 120%;
 }
 
@@ -85,8 +119,9 @@ header .container .hire-me {
   background-color: #16C0F0;
   color: #ffffff;
   text-decoration: none;
-  padding: 0.5rem 1rem;
-  font-size: 80%;
+  padding: 0.6rem 1.5rem;
+  font-size: 60%;
+  font-weight: bold;
   border-radius: 50px;
   display: inline-block;
   margin-top: 1rem;
@@ -98,5 +133,46 @@ header .container .desc {
 
 header .container .desc span {
   color: #16C0F0;
+}
+
+header .discover {
+  position: absolute;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  right: 40px;
+  bottom: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 80%;
+  cursor: pointer;
+}
+
+header .discover .icon {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  font-weight: normal;
+  -webkit-animation: discover_arrow 1s infinite;
+          animation: discover_arrow 1s infinite;
+}
+
+.nav-active {
+  color: #16C0F0 !important;
+}
+
+@-webkit-keyframes discover_arrow {
+  50% {
+    -webkit-transform: rotate(180deg) translateY(10px);
+            transform: rotate(180deg) translateY(10px);
+  }
+}
+
+@keyframes discover_arrow {
+  50% {
+    -webkit-transform: rotate(180deg) translateY(10px);
+            transform: rotate(180deg) translateY(10px);
+  }
 }
 /*# sourceMappingURL=styles.css.map */
