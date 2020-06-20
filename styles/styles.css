@@ -85,6 +85,7 @@ header .main-nav li::before {
   width: 110%;
   height: 0;
   bottom: -5px;
+  left: -5%;
   border-bottom: 2px solid #16C0F0;
   -webkit-transform: scale(0);
           transform: scale(0);
