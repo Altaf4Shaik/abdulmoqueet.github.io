@@ -11,12 +11,29 @@ html {
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
 }
 
-body {
-  overflow: hidden;
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 90%;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
 header {
@@ -25,18 +42,15 @@ header {
   height: 100vh;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+  margin: 0;
 }
 
-header .row {
-  width: 1140px;
-  margin: 0 auto;
-}
-
-header .row .flex {
+header .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 40px;
+  padding-top: 40px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -69,7 +83,7 @@ header .main-nav li {
 header .main-nav li a {
   color: #fff;
   text-decoration: none;
-  font-size: 90%;
+  font-size: 80%;
   font-weight: 400;
   padding-bottom: 5px;
 }
@@ -110,7 +124,6 @@ header .container .i-am {
 
 header .container .name {
   font-size: 300%;
-  font-family: "Montserrat", sans-serif;
   color: #ffffff;
   margin-left: -5px;
   margin-bottom: 1rem;
@@ -122,10 +135,18 @@ header .container .hire-me {
   text-decoration: none;
   padding: 0.6rem 1.5rem;
   font-size: 60%;
-  font-weight: bold;
+  font-weight: 600;
   border-radius: 50px;
   display: inline-block;
   margin-top: 1.5rem;
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+}
+
+header .container .hire-me:hover {
+  background-color: #129ac0;
+  -webkit-animation: hire-me_animation 1.5s infinite ease-in-out;
+          animation: hire-me_animation 1.5s infinite ease-in-out;
 }
 
 header .container .desc {
@@ -175,5 +196,165 @@ header .discover .icon {
     -webkit-transform: rotate(180deg) translateY(10px);
             transform: rotate(180deg) translateY(10px);
   }
+}
+
+@-webkit-keyframes hire-me_animation {
+  50% {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+  }
+}
+
+@keyframes hire-me_animation {
+  50% {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+  }
+}
+
+.about-me-section {
+  background-color: #323232;
+  padding: 5rem 0 3rem;
+  text-align: center;
+  text-align: center;
+}
+
+.about-me-section .row {
+  text-align: left;
+}
+
+.about-me-section .main-title {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.about-me-section .main-title h1::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: #6e6d6d;
+  left: 0;
+  right: 0;
+  bottom: -15px;
+}
+
+.about-me-section .main-title span {
+  position: absolute;
+  bottom: -22px;
+  left: 67%;
+  background-color: #323232;
+  padding: 0 5px;
+  color: #16C0F0;
+  font-weight: 600;
+}
+
+.about-me-section .left h2 {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.about-me-section .left h2::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: #16C0F0;
+  left: 0;
+  right: 0;
+  bottom: -15px;
+  width: 15%;
+}
+
+.about-me-section .left .about-me-text {
+  font-size: 75%;
+  font-weight: 300;
+}
+
+.about-me-section .box {
+  position: relative;
+  margin-top: 3rem;
+  background-color: #252525;
+  padding: 1.5rem;
+  margin-right: 13px;
+}
+
+.about-me-section .box ul {
+  list-style: none;
+  font-size: 80%;
+}
+
+.about-me-section .box li {
+  margin-bottom: .7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
+}
+
+.about-me-section .box li:last-child {
+  margin: 0;
+}
+
+.about-me-section .box .icon-rounded {
+  color: #ffffff;
+  background-color: #16C0F0;
+  padding: 10px;
+  font-size: 110%;
+  border-radius: 50%;
+  margin-right: .7rem;
+}
+
+.about-me-section .box .social-media {
+  line-height: 1.42857143;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -12px;
+  height: 76%;
+  width: 35px;
+  background: linear-gradient(135deg, #319be6 0%, #16c0f0 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 110%;
+}
+
+.about-me-section .box .social-media a {
+  color: #ffffff;
+}
+
+.about-me-section .hire-me {
+  background-color: #16C0F0;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.6rem 1.5rem;
+  font-size: 60%;
+  font-weight: 600;
+  border-radius: 50px;
+  display: inline-block;
+  margin-top: 3.5rem;
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+}
+
+.about-me-section .hire-me:hover {
+  background-color: #129ac0;
+  -webkit-animation: hire-me_animation 1.5s infinite ease-in-out;
+          animation: hire-me_animation 1.5s infinite ease-in-out;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -12,15 +12,299 @@ html {
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
 }
 
-body {
-  overflow: hidden;
+// ----------------------------------------------
+// TypoGraphy
+// ----------------------------------------------
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 90%;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
 // ----------------------------------------------
 // Header
 // ----------------------------------------------
-@import "header";
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url(../img/top-bg.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+
+  .flex {
+    display: flex;
+    padding-top: 40px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: 200%;
+    color: #fff;
+    font-weight: 500;
+    span {
+      color: $sky-color;
+    }
+  }
+
+  .main-nav {
+    list-style: none;
+
+    li {
+      position: relative;
+      display: inline-block;
+      margin-left: 40px;
+      border-bottom: solid 2px transparent;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 80%;
+        font-weight: 400;
+        padding-bottom: 5px;
+      }
+      &:hover::before {
+        transform: scale(1);
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        width: 110%;
+        height: 0;
+        bottom: -5px;
+        left: -5%;
+        border-bottom: 2px solid $sky-color;
+        transform: scale(0);
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+  }
+
+  .container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 400;
+    font-size: 120%;
+    .i-am {
+      margin-bottom: 1rem;
+    }
+    .name {
+      font-size: 300%;
+      color: #ffffff;
+      margin-left: -5px;
+      margin-bottom: 1rem;
+    }
+    .hire-me {
+      background-color: $sky-color;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 0.6rem 1.5rem;
+      font-size: 60%;
+      font-weight: 600;
+      border-radius: 50px;
+      display: inline-block;
+      margin-top: 1.5rem;
+      transition: background-color 0.4s;
+      &:hover {
+        background-color: $sky-color-dark;
+        animation: hire-me_animation 1.5s infinite ease-in-out;
+      }
+    }
+    .desc {
+      color: #ffffff;
+      .typer {
+        color: $sky-color !important;
+      }
+    }
+  }
+
+  .discover {
+    position: absolute;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    right: 40px;
+    bottom: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 80%;
+    cursor: pointer;
+    .icon {
+      transform: rotate(180deg);
+      font-weight: normal;
+      animation: discover_arrow 1s infinite;
+    }
+  }
+}
+
+.nav-active {
+  color: $sky-color !important;
+}
+
+@keyframes discover_arrow {
+  50% {
+    transform: rotate(180deg) translateY(10px);
+  }
+}
+
+@keyframes hire-me_animation {
+  50% {
+    transform: scale(1.03);
+  }
+}
+
+// ----------------------------------------------
+// About Me
+// ----------------------------------------------
+.about-me-section {
+  background-color: $bg-grey-light;
+  padding: 5rem 0 3rem;
+
+  text-align: center;
+
+  .row{
+    text-align: left;
+  }
+
+  .main-title {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 3rem;
+    h1 {
+      &::before {
+        position: absolute;
+        content: "";
+        height: 2px;
+        background-color: $line-grey;
+        left: 0;
+        right: 0;
+        bottom: -15px;
+      }
+    }
+
+    span {
+      position: absolute;
+      bottom: -22px;
+      left: 67%;
+      background-color: $bg-grey-light;
+      padding: 0 5px;
+      color: $sky-color;
+      font-weight: 600;
+    }
+  }
+
+  .left {
+    h2 {
+      position: relative;
+      margin-bottom: 2rem;
+      &::before {
+        position: absolute;
+        content: "";
+        height: 2px;
+        background-color: $sky-color;
+        left: 0;
+        right: 0;
+        bottom: -15px;
+        width: 15%;
+      }
+    }
+    .about-me-text {
+      font-size: 75%;
+      font-weight: 300;
+    }
+  }
+
+  .box {
+    position: relative;
+    margin-top: 3rem;
+    background-color: $bg-grey-dark;
+    padding: 1.5rem;
+    margin-right: 13px;
+    ul {
+      list-style: none;
+      font-size: 80%;
+    }
+    li {
+      margin-bottom: .7rem;
+      display: flex;
+      align-items: center;
+      vertical-align: middle;
+      &:last-child {
+        margin: 0;
+      }
+    }
+    .icon-rounded {
+      color: #ffffff;
+      background-color: $sky-color;
+      padding: 10px;
+      font-size: 110%;
+      border-radius: 50%;
+      margin-right: .7rem;
+    }
+
+    .social-media {
+      // -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      line-height: 1.42857143;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -12px;
+      height: 76%;
+      width: 35px;
+      background: linear-gradient(135deg, #319be6 0%, #16c0f0 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: 110%;
+      // padding: 1rem 0;
+      a{
+        color: #ffffff;
+      }
+    }
+  }
+
+  text-align: center;
+
+  .hire-me {
+    background-color: $sky-color;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.6rem 1.5rem;
+    font-size: 60%;
+    font-weight: 600;
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: 3.5rem;
+    transition: background-color 0.4s;
+    
+    &:hover {
+      background-color: $sky-color-dark;
+      animation: hire-me_animation 1.5s infinite ease-in-out;
+    }
+  }
+
+
+}
