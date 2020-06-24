@@ -1,0 +1,107 @@
+.skills-section {
+    background-color: $bg-grey-dark;
+    padding: 5rem 0;
+  
+    .main-title {
+      span {
+        background-color: $bg-grey-dark;
+      }
+    }
+  
+    .skill-type {
+      display: flex;
+      justify-content: space-between;
+      div {
+        position: relative;
+        background-color: $bg-grey-light;
+        margin-bottom: 1rem;
+        width: 50%;
+        text-align: center;
+        color: $sky-color;
+        p {
+          padding: 0.7rem 0;
+          font-weight: 500;
+        }
+        .triangle {
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-left: 12px solid transparent;
+          border-right: 12px solid transparent;
+          border-top: 14px solid $sky-color;
+          background-color: $bg-grey-dark;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+  
+      .personal {
+        margin-left: 4px;
+        .triangle {
+          display: none;
+        }
+      }
+  
+      .active {
+        background-color: $sky-color;
+        color: #ffffff;
+      }
+    }
+  
+    .box {
+      background-color: $bg-grey-light;
+  
+      .progress-container {
+        position: relative;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        &:last-child {
+          margin: 0;
+        }
+        .progress-bar {
+          background-color: $sky-color;
+          height: 4px;
+          border-radius: 5px;
+        }
+        h4 {
+          background-color: $bg-grey-dark;
+          font-weight: 400;
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+          position: absolute;
+          top: 0;
+          left: 100px;
+          display: inline-block;
+          padding: 0 63px 0 15px;
+          font-size: 60%;
+          height: 100%;
+          line-height: 28px;
+          border-radius: 20px;
+          color: $grey-color;
+          background: $bg-grey-light;
+          border: 1px solid $sky-color;
+          text-align: center;
+          span {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            display: inline-block;
+            padding: 0 11px;
+            line-height: 28px;
+            height: 28px;
+            border-radius: 20px;
+            background: $sky-color;
+            color: $bg-grey-light;
+            border: 1px solid;
+            text-align: center;
+          }
+        }
+      }
+  
+      .skills-list {
+        padding: 1.5rem;
+      }
+    }
+  }
+  
