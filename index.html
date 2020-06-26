@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="styles/bootstrap.css">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -27,7 +28,7 @@
                         <li><a href="#">About</a></li>
                         <li><a href="#">Skill</a></li>
                         <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Contact Me</a></li>
                     </ul>
                 </div>
             </nav>
@@ -53,11 +54,16 @@
     <section class="about-me-section">
         <div class="row">
 
-            <div class="col col-md-5 left">
-                <div class="main-title">
-                    <h1>ABOUT ME</h1>
-                    <span>01.</span>
-                </div>
+            <div class="main-title">
+                <h1>ABOUT ME</h1>
+                <span>01.</span>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-5 left">
                 <h2>Hi, I'm Abdul Moqueet</h2>
 
                 <div class="about-me-text text">
@@ -68,7 +74,7 @@
 
             </div>
 
-            <div class="col col-md-7 right">
+            <div class="col-md-7 right">
                 <div class="box">
                     <ul class="text">
                         <li>
@@ -81,7 +87,7 @@
                             <ion-icon class="icon-rounded" name="globe"></ion-icon>abdul-moqueet.github.io
                         </li>
                         <li>
-                            <ion-icon class="icon-rounded" name="location"></ion-icon>New Delhi, India
+                            <ion-icon class="icon-rounded" name="location"></ion-icon>Bihar, India
                         </li>
                     </ul>
                     <div class="social-media">
@@ -131,21 +137,303 @@
                 <div class="skills-list">
                     <div class="progress-container">
                         <div class="progress-bar" style="width: 95%;"></div>
-                        <h4>Html5 &amp; Css3<span>95%</span></h4>
+                        <h4>HTML5 &amp; CSS3<span>95%</span></h4>
                     </div>
 
                     <div class="progress-container">
-                        <div class="progress-bar" style="width: 95%;"></div>
-                        <h4>Html5 &amp; Css3<span>95%</span></h4>
+                        <div class="progress-bar" style="width: 85%;"></div>
+                        <h4>JavaScript<span>85%</span></h4>
                     </div>
+
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                        <h4>React.js<span>80%</span></h4>
+                    </div>
+
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                        <h4>Node.js<span>80%</span></h4>
+                    </div>
+
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                        <h4>Express.js<span>80%</span></h4>
+                    </div>
+
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                        <h4>BootStrap<span>75%</span></h4>
+                    </div>
+
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 85%;"></div>
+                        <h4>JQuery<span>85%</span></h4>
+                    </div>
+
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                        <h4>Core Java<span>90%</span></h4>
+                    </div>
+
+
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 70%;"></div>
+                        <h4>MongoDB<span>70%</span></h4>
+                    </div>
+
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 70%;"></div>
+                        <h4>MySQL<span>70%</span></h4>
+                    </div>
+
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                        <h4>Git &amp; Github<span>80%</span></h4>
+                    </div>
+
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 60%;"></div>
+                        <h4>RESTful API<span>60%</span></h4>
+                    </div>
+
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                        <h4>WordPress<span>80%</span></h4>
+                    </div>
+
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 85%;"></div>
+                        <h4>UI / UX<span>85%</span></h4>
+                    </div>
+
                 </div>
+
             </div>
 
         </div>
     </section>
 
+    <!-- ------------------------- -->
+    <!-- Projects -->
+    <!-- ------------------------- -->
+    <section class="project-section">
+        <div class="row">
+            <div class="main-title">
+                <h1>MY Projects</h1>
+                <span>03.</span>
+            </div>
+
+            <div class="project-types">
+
+                <ul class="project-filter">
+                    <li class="nav-active" data-filter="*">All</li>
+                    <li data-filter=".react">React</li>
+                    <li data-filter=".node">Node</li>
+                    <li data-filter=".web">Web</li>
+                    <li data-filter=".javaFX">JavaFX</li>
+                    <li data-filter=".android">Android</li>
+
+                </ul>
+
+            </div>
+
+            <div class="project-items">
+                <div class="project-tile col-sm-6 col-md-4 left">
+                    <div class="card">
+                        <div class="image" style="background-image: url(img/library_management.png);"></div>
+
+                        <div class="flex-wrapper">
+                            <div class="project-desc-box">
+                                <div class="title">Library Management System</div>
+                                <div class="desc">
+                                    This is a project about Library Management System, using JavaFx as frontend and
+                                    Oracle
+                                    Database as backend.
+                                </div>
+                            </div>
+
+                            <div class="button-holder">
+                                <a href="#" class="button">Live Preview</a>
+                                <a href="#" class="button">Source Code</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="project-tile col-sm-6 col-md-4 left">
+                    <div class="card">
+                        <div class="image" style="background-image: url(img/anime-web.png);"></div>
+
+                        <div class="flex-wrapper">
+                            <div class="project-desc-box">
+                                <div class="title">My Anime Web</div>
+                                <div class="desc">
+                                    This is a fully responsive anime website. My Anime Web, using HTML, CSS as frontend
+                                    and Javascript as backend. using HTML, CSS as frontend and Javascript as backend.
+                                </div>
+                            </div>
+
+                            <div class="button-holder">
+                                <a href="#" class="button">Live Preview</a>
+                                <a href="#" class="button">Source Code</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="project-tile col-sm-6 col-md-4 left">
+                    <div class="card">
+                        <div class="image" style="background-image: url(img/anime-web.png);"></div>
+
+                        <div class="flex-wrapper">
+                            <div class="project-desc-box">
+                                <div class="title">My Anime Web</div>
+                                <div class="desc">
+                                    This is a fully responsive anime website. My Anime Web, using HTML, CSS as frontend
+                                    and Javascript as backend. using HTML, CSS as frontend and Javascript as backend.
+                                </div>
+                            </div>
+
+                            <div class="button-holder">
+                                <a href="#" class="button">Live Preview</a>
+                                <a href="#" class="button">Source Code</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ------------------------- -->
+    <!-- Contact Me -->
+    <!-- ------------------------- -->
+    <section class="contact-me-section">
+
+        <div class="row">
+            <div class="main-title">
+                <h1>Contact Me</h1>
+                <span>04.</span>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm-4">
+                <div class="contact-boxes">
+
+                    <div class="contact-box">
+                        <div class="title-box">
+                            <h4>
+                                <ion-icon class="icon-box" name="person"></ion-icon> Name
+                            </h4>
+                        </div>
+                        <div class="content-box">
+                            <p>Abdul Moqueet</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-box">
+                        <div class="title-box">
+                            <h4>
+                                <ion-icon class="icon-box" name="location"></ion-icon> Location
+                            </h4>
+                        </div>
+                        <div class="content-box">
+                            <p>Bihar, India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-box">
+                        <div class="title-box">
+                            <h4>
+                                <ion-icon class="icon-box" name="mail"></ion-icon> Email
+                            </h4>
+                        </div>
+                        <div class="content-box">
+                            <p>moqueetabdul@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-box">
+                        <div class="title-box">
+                            <h4>
+                                <ion-icon class="icon-box" name="globe"></ion-icon> Website
+                            </h4>
+                        </div>
+                        <div class="content-box">
+                            <p>abdul-moqueet.github.io</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-sm-8">
+                <form class="form" action="" method="post">
+                    <div>
+                        <label for="to">To: abdulmoqueet@gmail.com</label>
+                        <input type="text" id="to" disabled>
+                    </div>
+
+                    <div>
+                        <label for="sub">Subject</label>
+                        <input type="text" id="sub">
+                    </div>
+
+                    <div>
+                        <label for="msg">Your Message</label>
+                        <textarea id="msg" name="story" rows="5" cols="33"></textarea>
+                    </div>
+
+                    <div class="button">Send Mail</div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <h2 class="logo"><span>M</span>oqueet</h2>
+
+        <div class="social-links">
+            <a href="#">
+                <ion-icon class="icon" name="logo-github"></ion-icon>
+            </a>
+            <a href="#">
+                <ion-icon class="icon" name="logo-stackoverflow"></ion-icon>
+            </a>
+            <a href="#">
+                <ion-icon class="icon" name="logo-instagram"></ion-icon>
+            </a>
+            <a href="#">
+                <ion-icon class="icon" name="logo-linkedin"></ion-icon>
+            </a>
+        </div>
+
+        <div class="copy">
+            © Abdul Moqueet | All Right Reserved 2020.
+        </div>
+
+    </footer>
+
     <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="script/floating-label.min.js"></script>
+    <script src="script/script.js"></script>
 
 </body>
 

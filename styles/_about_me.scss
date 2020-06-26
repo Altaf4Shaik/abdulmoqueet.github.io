@@ -3,9 +3,11 @@
     padding: 5rem 0;
   
     .left {
+      padding-left: 0;
       h2 {
         position: relative;
         margin-bottom: 2rem;
+        
         &::before {
           position: absolute;
           content: "";
@@ -21,6 +23,10 @@
         font-size: 75%;
         font-weight: 300;
       }
+    }
+
+    .right{
+      padding-right: 0;
     }
   
     .box {
