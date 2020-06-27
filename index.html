@@ -19,8 +19,9 @@
     <!-- Header -->
     <!-- ------------------------- -->
     <header>
-        <div class="row">
-            <nav>
+
+        <nav id="main-nav-container">
+            <div class="row">
                 <div class="flex">
                     <div class="logo"><span>M</span>oqueet</div>
                     <ul class="main-nav">
@@ -31,7 +32,10 @@
                         <li><a href="#">Contact Me</a></li>
                     </ul>
                 </div>
-            </nav>
+            </div>
+        </nav>
+
+        <div class="row">
 
             <div class="container">
                 <div class="i-am">Hey, I am</div>
@@ -51,7 +55,7 @@
     <!-- ------------------------- -->
     <!-- About Me -->
     <!-- ------------------------- -->
-    <section class="about-me-section">
+    <section class="about-me-section" id="section-about-me">
         <div class="row">
 
             <div class="main-title">
@@ -432,6 +436,7 @@
 
     <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="script/jquery.waypoints.min.js"></script>
     <script src="script/floating-label.min.js"></script>
     <script src="script/script.js"></script>
 

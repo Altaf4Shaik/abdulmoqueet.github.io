@@ -8,6 +8,10 @@ header {
     background-position: center;
     background-attachment: fixed;
     margin: 0;
+
+    nav{
+      transition: all .6s;
+    }
   
     .flex {
       display: flex;
@@ -22,6 +26,20 @@ header {
       font-weight: 500;
       span {
         color: $sky-color;
+      }
+    }
+
+    .main-nav-active{
+      position: fixed;
+      z-index: 2;
+      width: 100%;
+      top: -80px;
+      background-color: #202020;
+      .flex{
+        padding: .4rem 0;
+      }
+      .logo{
+        font-size: 160%;
       }
     }
   

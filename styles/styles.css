@@ -92,6 +92,11 @@ header {
   margin: 0;
 }
 
+header nav {
+  -webkit-transition: all .6s;
+  transition: all .6s;
+}
+
 header .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -113,6 +118,22 @@ header .logo {
 
 header .logo span {
   color: #16C0F0;
+}
+
+header .main-nav-active {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  top: -80px;
+  background-color: #202020;
+}
+
+header .main-nav-active .flex {
+  padding: .4rem 0;
+}
+
+header .main-nav-active .logo {
+  font-size: 160%;
 }
 
 header .main-nav {
