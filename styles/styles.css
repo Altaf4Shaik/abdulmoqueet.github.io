@@ -287,18 +287,15 @@ header .discover .icon {
 .about-me-section .left .about-me-text {
   font-size: 75%;
   font-weight: 300;
-}
-
-.about-me-section .right {
-  padding-right: 0;
+  text-align: justify;
 }
 
 .about-me-section .box {
   position: relative;
-  margin-top: 3rem;
   background-color: #252525;
   padding: 1.5rem;
   margin-right: 13px;
+  margin-left: 15px;
 }
 
 .about-me-section .box ul {
@@ -542,6 +539,7 @@ header .discover .icon {
 }
 
 .project-section .project-items .flex-wrapper {
+  height: 220px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -554,22 +552,14 @@ header .discover .icon {
           justify-content: space-evenly;
 }
 
-.project-section .project-items .project-tile {
-  margin-bottom: 2rem;
-}
-
-.project-section .project-items .project-tile:last-child {
-  margin: 0;
-}
-
 .project-section .project-items .project-tile .card {
   background-color: #252525;
   background-color: #ffffff;
-  padding-bottom: 1rem;
+  margin-right: 1rem;
 }
 
 .project-section .project-items .project-tile .card .project-desc-box {
-  padding: 1rem;
+  padding: 0 1rem;
   text-align: center;
 }
 
@@ -797,5 +787,29 @@ footer .social-links a .icon:hover {
 
 footer .copy {
   font-size: 70%;
+}
+
+@media screen and (min-width: 1200px) {
+  .row {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .row {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .row {
+    max-width: 720px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .row {
+    max-width: 540px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

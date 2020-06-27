@@ -22,19 +22,17 @@
       .about-me-text {
         font-size: 75%;
         font-weight: 300;
+        text-align: justify;
       }
-    }
-
-    .right{
-      padding-right: 0;
     }
   
     .box {
       position: relative;
-      margin-top: 3rem;
+      // margin-top: 3rem;
       background-color: $bg-grey-dark;
       padding: 1.5rem;
       margin-right: 13px;
+      margin-left: 15px;
       ul {
         list-style: none;
         font-size: 80%;
