@@ -26,28 +26,10 @@ $(document).ready(() => {
     $(".nav-burger").click(function () {
         $(".nav-burger .line-1, .nav-burger .line-3").toggleClass("nav-burger-active");
         $(".nav-burger .line-2").toggleClass("nav-burger-active-line-2");
+        $(".nav-burger .line-3").toggleClass("nav-burger-active");
 
-    //     if (timer) {
-    //         clearTimeout(timer);
-    //         timer = null;
-    //     }
-
-    //     if ($(".main-nav").hasClass("main-nav-bg-active")) {
-
-    //         $(".mobile-nav .main-nav ul").toggleClass("left-nav-active");
-
-    //         timer = setTimeout(function(){
-    //             $(".main-nav").toggleClass("main-nav-bg-active");
-    //         },600);
-
-    //     } else {
-    //         $(".main-nav").toggleClass("main-nav-bg-active");
-
-    //         setTimeout(function () {
-    //             $(".mobile-nav .main-nav ul").toggleClass("left-nav-active");
-    //         }, 50);
-    //     }
-
-    // });
+        $(".mobile-nav ul").toggleClass("left-nav-peek");
+        $("body").toggleClass("body-scroll-disable");
+    });
 
 });
