@@ -97,7 +97,7 @@ header nav {
   transition: all .6s;
 }
 
-header .flex {
+header .desktop-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,44 +110,28 @@ header .flex {
           justify-content: space-between;
 }
 
-header .logo {
+header .desktop-nav .logo {
   font-size: 200%;
   color: #fff;
   font-weight: 500;
 }
 
-header .logo span {
+header .desktop-nav .logo span {
   color: #16C0F0;
 }
 
-header .main-nav-active {
-  position: fixed;
-  z-index: 2;
-  width: 100%;
-  top: -80px;
-  background-color: #202020;
-}
-
-header .main-nav-active .flex {
-  padding: .4rem 0;
-}
-
-header .main-nav-active .logo {
-  font-size: 160%;
-}
-
-header .main-nav {
+header .desktop-nav .main-nav {
   list-style: none;
 }
 
-header .main-nav li {
+header .desktop-nav .main-nav li {
   position: relative;
   display: inline-block;
   margin-left: 40px;
   border-bottom: solid 2px transparent;
 }
 
-header .main-nav li a {
+header .desktop-nav .main-nav li a {
   color: #fff;
   text-decoration: none;
   font-size: 80%;
@@ -155,12 +139,12 @@ header .main-nav li a {
   padding-bottom: 5px;
 }
 
-header .main-nav li:hover::before {
+header .desktop-nav .main-nav li:hover::before {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-header .main-nav li::before {
+header .desktop-nav .main-nav li::before {
   position: absolute;
   content: "";
   width: 110%;
@@ -174,6 +158,87 @@ header .main-nav li::before {
   transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+header .mobile-nav {
+  position: absolute;
+  width: 100%;
+  background-color: #202020;
+}
+
+header .mobile-nav .flex {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: .5rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .mobile-nav .logo {
+  font-size: 160%;
+  color: #fff;
+  font-weight: 500;
+}
+
+header .mobile-nav .logo span {
+  color: #16C0F0;
+}
+
+header .mobile-nav .nav-burger {
+  position: absolute;
+  right: 0;
+  width: 30px;
+  -webkit-transition: -webkit-transform .6s;
+  transition: -webkit-transform .6s;
+  transition: transform .6s;
+  transition: transform .6s, -webkit-transform .6s;
+}
+
+header .mobile-nav .nav-burger .line-1 {
+  background-color: #16C0F0;
+  height: 2px;
+  margin-right: 10px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  margin-bottom: 3px;
+  width: 60%;
+}
+
+header .mobile-nav .nav-burger .line-2 {
+  background-color: #16C0F0;
+  height: 2px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  margin: .3rem 0;
+}
+
+header .mobile-nav .line-3 {
+  background-color: #16C0F0;
+  height: 2px;
+  margin-left: 10px;
+  width: 60%;
+  margin-top: 3px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+header .main-nav-active {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  top: -80px;
+  background-color: #202020;
+}
+
+header .main-nav-active .desktop-nav {
+  padding: .4rem 0;
+}
+
+header .main-nav-active .logo {
+  font-size: 160%;
 }
 
 header .container {
@@ -259,13 +324,20 @@ header .discover .icon {
   }
 }
 
+.nav-burger-active {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.nav-burger-active-line-2 {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin: 0 !important;
+}
+
 .about-me-section {
   background-color: #323232;
   padding: 5rem 0;
-}
-
-.about-me-section .left {
-  padding-left: 0;
 }
 
 .about-me-section .left h2 {
@@ -294,8 +366,6 @@ header .discover .icon {
   position: relative;
   background-color: #252525;
   padding: 1.5rem;
-  margin-right: 13px;
-  margin-left: 15px;
 }
 
 .about-me-section .box ul {
@@ -555,7 +625,6 @@ header .discover .icon {
 .project-section .project-items .project-tile .card {
   background-color: #252525;
   background-color: #ffffff;
-  margin-right: 1rem;
 }
 
 .project-section .project-items .project-tile .card .project-desc-box {
@@ -804,6 +873,9 @@ footer .copy {
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .row {
     max-width: 720px;
+  }
+  header .desktop-nav .main-nav li {
+    margin-left: 20px;
   }
 }
 

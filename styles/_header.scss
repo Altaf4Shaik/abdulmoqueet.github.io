@@ -11,22 +11,110 @@ header {
 
     nav{
       transition: all .6s;
-    }
+    }    
   
-    .flex {
+    .desktop-nav {
       display: flex;
       padding-top: 40px;
       align-items: center;
       justify-content: space-between;
-    }
-  
-    .logo {
-      font-size: 200%;
-      color: #fff;
-      font-weight: 500;
-      span {
-        color: $sky-color;
+
+      .logo {
+        font-size: 200%;
+        color: #fff;
+        font-weight: 500;
+        span {
+          color: $sky-color;
+        }
       }
+    
+      .main-nav {
+        list-style: none;
+    
+        li {
+          position: relative;
+          display: inline-block;
+          margin-left: 40px;
+          border-bottom: solid 2px transparent;
+    
+          a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 80%;
+            font-weight: 400;
+            padding-bottom: 5px;
+          }
+          &:hover::before {
+            transform: scale(1);
+          }
+          &::before {
+            position: absolute;
+            content: "";
+            width: 110%;
+            height: 0;
+            bottom: -5px;
+            left: -5%;
+            border-bottom: 2px solid $sky-color;
+            transform: scale(0);
+            transition: transform 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+
+    .mobile-nav{
+      position: absolute;
+      width: 100%;
+      background-color: #202020;
+
+      .flex{
+        position: relative;
+        display: flex;
+        padding: .5rem 0;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 160%;
+        color: #fff;
+        font-weight: 500;
+        span {
+          color: $sky-color;
+        }
+      }
+
+      .nav-burger{
+        position: absolute;
+        right: 0;
+        width: 30px;
+        transition: transform .6s;
+
+        .line-1{
+          background-color: $sky-color;
+          height: 2px;
+          margin-right: 10px;
+          transition: all 0.6s;
+          margin-bottom: 3px;
+          width: 60%;
+        }
+
+        .line-2{
+          background-color: $sky-color;
+          height: 2px;
+          transition: all 0.6s;
+          margin: .3rem 0;
+        }
+      }
+
+      .line-3{
+        background-color: $sky-color;
+        height: 2px;
+        margin-left: 10px;
+        width: 60%;
+        margin-top: 3px;
+        transition: all 0.6s;
+      }
+
     }
 
     .main-nav-active{
@@ -35,44 +123,11 @@ header {
       width: 100%;
       top: -80px;
       background-color: #202020;
-      .flex{
+      .desktop-nav{
         padding: .4rem 0;
       }
       .logo{
         font-size: 160%;
-      }
-    }
-  
-    .main-nav {
-      list-style: none;
-  
-      li {
-        position: relative;
-        display: inline-block;
-        margin-left: 40px;
-        border-bottom: solid 2px transparent;
-  
-        a {
-          color: #fff;
-          text-decoration: none;
-          font-size: 80%;
-          font-weight: 400;
-          padding-bottom: 5px;
-        }
-        &:hover::before {
-          transform: scale(1);
-        }
-        &::before {
-          position: absolute;
-          content: "";
-          width: 110%;
-          height: 0;
-          bottom: -5px;
-          left: -5%;
-          border-bottom: 2px solid $sky-color;
-          transform: scale(0);
-          transition: transform 0.3s ease-in-out;
-        }
       }
     }
   
@@ -133,3 +188,11 @@ header {
     }
   }
   
+  .nav-burger-active{
+    transform: rotate(45deg);
+  }
+
+  .nav-burger-active-line-2{
+    transform: rotate(-45deg);
+    margin: 0 !important;
+  }

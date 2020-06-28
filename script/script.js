@@ -19,4 +19,10 @@ $(document).ready(() => {
     $("#sub").floatingLabel();
     $("#msg").floatingLabel();
 
+    $(".nav-burger").click(function(){
+        $(".nav-burger .line-1").toggleClass("nav-burger-active");
+        $(".nav-burger .line-2").toggleClass("nav-burger-active-line-2");
+        $(".nav-burger .line-3").toggleClass("nav-burger-active");
+    });
+
 });

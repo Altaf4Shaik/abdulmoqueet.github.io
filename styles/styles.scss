@@ -160,7 +160,6 @@ h2 {
       .card {
         background-color: $bg-grey-dark;
         background-color: #ffffff;
-        margin-right: 1rem;
 
         .project-desc-box {
           padding: 0 1rem;
@@ -392,6 +391,17 @@ footer {
   .row {
     max-width: 720px;
   }
+
+  header {
+    .desktop-nav {
+      .main-nav {
+        li {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
