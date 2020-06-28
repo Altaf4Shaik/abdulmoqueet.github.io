@@ -93,8 +93,8 @@ header {
 }
 
 header nav {
-  -webkit-transition: all .6s;
-  transition: all .6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
 }
 
 header .desktop-nav {
@@ -171,7 +171,7 @@ header .mobile-nav .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -191,10 +191,10 @@ header .mobile-nav .nav-burger {
   position: absolute;
   right: 0;
   width: 30px;
-  -webkit-transition: -webkit-transform .6s;
-  transition: -webkit-transform .6s;
-  transition: transform .6s;
-  transition: transform .6s, -webkit-transform .6s;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
 }
 
 header .mobile-nav .nav-burger .line-1 {
@@ -212,7 +212,7 @@ header .mobile-nav .nav-burger .line-2 {
   height: 2px;
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
-  margin: .3rem 0;
+  margin: 0.3rem 0;
 }
 
 header .mobile-nav .line-3 {
@@ -225,6 +225,47 @@ header .mobile-nav .line-3 {
   transition: all 0.6s;
 }
 
+header .mobile-nav ul {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 265px;
+  z-index: 3;
+  background-color: #323232;
+  -webkit-transform: translateX(-270px);
+          transform: translateX(-270px);
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+  list-style: none;
+}
+
+header .mobile-nav ul a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  border-top: 1px solid #3a3939;
+  border-bottom: 1px solid #292929;
+  padding: 15px 28px;
+}
+
+header .mobile-nav ul .logo {
+  text-align: center;
+  font-size: 150%;
+  padding: 60px 0;
+  border-bottom: 1px solid #323233;
+  -webkit-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .mobile-nav .left-nav-peek {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
 header .main-nav-active {
   position: fixed;
   z-index: 2;
@@ -234,7 +275,7 @@ header .main-nav-active {
 }
 
 header .main-nav-active .desktop-nav {
-  padding: .4rem 0;
+  padding: 0.4rem 0;
 }
 
 header .main-nav-active .logo {
@@ -333,6 +374,10 @@ header .discover .icon {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   margin: 0 !important;
+}
+
+.body-scroll-disable {
+  overflow-y: hidden;
 }
 
 .about-me-section {
