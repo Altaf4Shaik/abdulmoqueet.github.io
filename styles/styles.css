@@ -13,6 +13,7 @@ html {
   text-rendering: optimizeLegibility;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 1px;
+  line-height: 1.3;
 }
 
 h1,
@@ -60,6 +61,8 @@ h2 {
   display: inline-block;
   position: relative;
   margin-bottom: 3rem;
+  margin-left: 15px !important;
+  margin-right: 15px !important;
 }
 
 .main-title h1::before {
@@ -175,6 +178,7 @@ header .mobile-nav .flex {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 15px;
 }
 
 header .mobile-nav .logo {
@@ -189,16 +193,12 @@ header .mobile-nav .logo span {
 
 header .mobile-nav .nav-burger {
   position: absolute;
-  right: 0;
+  right: 15px;
   width: 30px;
   -webkit-transition: -webkit-transform 0.6s;
   transition: -webkit-transform 0.6s;
   transition: transform 0.6s;
   transition: transform 0.6s, -webkit-transform 0.6s;
-<<<<<<< HEAD
-  z-index: 4;
-=======
->>>>>>> mobile-nav-experemental
 }
 
 header .mobile-nav .nav-burger .line-1 {
@@ -229,21 +229,6 @@ header .mobile-nav .line-3 {
   transition: all 0.6s;
 }
 
-<<<<<<< HEAD
-header .mobile-nav .main-nav {
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.3);
-  top: 0;
-  height: 100vh;
-  width: 100%;
-  z-index: 3;
-}
-
-header .mobile-nav .main-nav ul {
-  background-color: #323232;
-  height: 100%;
-  width: 265px;
-=======
 header .mobile-nav ul {
   position: fixed;
   top: 0;
@@ -252,7 +237,6 @@ header .mobile-nav ul {
   width: 265px;
   z-index: 3;
   background-color: #323232;
->>>>>>> mobile-nav-experemental
   -webkit-transform: translateX(-270px);
           transform: translateX(-270px);
   -webkit-transition: -webkit-transform 0.6s;
@@ -262,11 +246,7 @@ header .mobile-nav ul {
   list-style: none;
 }
 
-<<<<<<< HEAD
-header .mobile-nav .main-nav a {
-=======
 header .mobile-nav ul a {
->>>>>>> mobile-nav-experemental
   color: #fff;
   text-decoration: none;
   display: inline-block;
@@ -274,13 +254,10 @@ header .mobile-nav ul a {
   border-top: 1px solid #3a3939;
   border-bottom: 1px solid #292929;
   padding: 15px 28px;
+  font-size: 80%;
 }
 
-<<<<<<< HEAD
-header .mobile-nav .main-nav .logo {
-=======
 header .mobile-nav ul .logo {
->>>>>>> mobile-nav-experemental
   text-align: center;
   font-size: 150%;
   padding: 60px 0;
@@ -289,14 +266,11 @@ header .mobile-nav ul .logo {
           box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 
-<<<<<<< HEAD
-=======
 header .mobile-nav .left-nav-peek {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
->>>>>>> mobile-nav-experemental
 header .main-nav-active {
   position: fixed;
   z-index: 2;
@@ -320,6 +294,7 @@ header .container {
           transform: translateY(-50%);
   font-weight: 400;
   font-size: 120%;
+  padding-left: 15px;
 }
 
 header .container .i-am {
@@ -407,23 +382,21 @@ header .discover .icon {
   margin: 0 !important;
 }
 
-<<<<<<< HEAD
-.left-nav-active {
-  -webkit-transform: translateX(0) !important;
-          transform: translateX(0) !important;
-}
-
-.main-nav-bg-active {
-  display: block !important;
-=======
 .body-scroll-disable {
   overflow-y: hidden;
->>>>>>> mobile-nav-experemental
 }
 
 .about-me-section {
   background-color: #323232;
   padding: 5rem 0;
+}
+
+.about-me-section .main-title {
+  margin: 0;
+}
+
+.about-me-section .left {
+  margin-top: 3rem;
 }
 
 .about-me-section .left h2 {
@@ -450,6 +423,7 @@ header .discover .icon {
 
 .about-me-section .box {
   position: relative;
+  margin-top: 3rem;
   background-color: #252525;
   padding: 1.5rem;
 }
@@ -537,6 +511,9 @@ header .discover .icon {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 80%;
 }
 
 .skills-section .skill-type div {
@@ -581,6 +558,8 @@ header .discover .icon {
 
 .skills-section .box {
   background-color: #323232;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .skills-section .box .progress-container {
@@ -708,6 +687,10 @@ header .discover .icon {
           justify-content: space-evenly;
 }
 
+.project-section .project-items .project-tile {
+  margin-bottom: 1.5rem;
+}
+
 .project-section .project-items .project-tile .card {
   background-color: #252525;
   background-color: #ffffff;
@@ -725,7 +708,7 @@ header .discover .icon {
 
 .project-section .project-items .project-tile .card .project-desc-box .desc {
   color: #000000;
-  font-size: 60%;
+  font-size: 66%;
   padding-top: 1rem;
   text-align: justify;
 }
@@ -760,25 +743,25 @@ header .discover .icon {
 }
 
 .contact-me-section .contact-boxes {
+  margin-bottom: 2rem;
   border: 3px solid #383636;
-  padding: 40px 20px;
+  padding: 0 20px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.contact-me-section .contact-boxes .contact-box {
-  margin-bottom: 20px;
-}
-
-.contact-me-section .contact-boxes .contact-box:last-child {
-  margin: 0;
-}
-
-.contact-me-section .contact-boxes .contact-box .title-box {
-  margin-bottom: 20px;
-}
-
-.contact-me-section .contact-boxes .contact-box .title-box h4 {
+.contact-me-section .contact-boxes .title-box h4 {
   position: relative;
   background: linear-gradient(135deg, #319be6 0%, #16c0f0 100%);
   color: #fff;
@@ -799,7 +782,7 @@ header .discover .icon {
           align-items: center;
 }
 
-.contact-me-section .contact-boxes .contact-box .title-box h4::before {
+.contact-me-section .contact-boxes .title-box h4::before {
   content: "";
   position: absolute;
   bottom: -14px;
@@ -811,7 +794,7 @@ header .discover .icon {
   transform: translateX(-50%);
 }
 
-.contact-me-section .contact-boxes .contact-box .title-box h4 .icon-box {
+.contact-me-section .contact-boxes .title-box h4 .icon-box {
   font-size: 150%;
   text-align: center;
   border-radius: 50%;
@@ -820,13 +803,13 @@ header .discover .icon {
 }
 
 .contact-me-section .contact-boxes .content-box {
-  font-size: 70%;
+  font-size: 66%;
+  margin-top: 0.8rem;
 }
 
 .contact-me-section .contact-boxes .content-box p {
   margin-bottom: 0;
-  line-height: 20px;
-  font-weight: 600;
+  font-weight: 400;
   color: #c2c0c3;
   letter-spacing: 1px;
   text-align: center;
@@ -837,20 +820,27 @@ header .discover .icon {
 }
 
 .contact-me-section .form {
-  text-align: end;
   border: 3px solid #383636;
-  padding: 60px 20px;
+  padding: 0 20px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-left: 1rem;
-}
-
-.contact-me-section .form div {
-  margin-bottom: 1.78rem;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .contact-me-section .form .button {
   margin: 0;
+  display: block;
+  text-align: center;
 }
 
 .contact-me-section .floating {
@@ -963,11 +953,93 @@ footer .copy {
   header .desktop-nav .main-nav li {
     margin-left: 20px;
   }
+  html {
+    font-size: 19px;
+  }
+  .contact-me-section .contact-boxes .content-box {
+    font-size: 55%;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .row {
     max-width: 540px;
+  }
+  header .container {
+    font-size: 90%;
+  }
+}
+
+@media screen and (min-width: 530px) and (max-width: 575px) {
+  header .container {
+    font-size: 90%;
+  }
+  .project-section .project-types li {
+    font-size: 70%;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 529px) {
+  header .container {
+    font-size: 90%;
+  }
+  header .container .name {
+    font-size: 260%;
+  }
+  .project-section .project-types li {
+    font-size: 66%;
+  }
+  .skills-section .box .progress-container h4 {
+    font-size: 60%;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 449px) {
+  header .container {
+    font-size: 90%;
+  }
+  header .container .name {
+    font-size: 230%;
+  }
+  .skills-section .box .skills-list {
+    padding: 1.5rem .5rem;
+  }
+  .skills-section .box .progress-container h4 {
+    font-size: 58%;
+    left: 20px;
+  }
+  .project-section .project-types li {
+    font-size: 66%;
+    margin-left: 10px;
+  }
+  footer .copy {
+    font-size: 60%;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  html {
+    font-size: 15px;
+  }
+  header .container {
+    font-size: 90%;
+  }
+  header .container .name {
+    font-size: 230%;
+  }
+  header .mobile-nav ul {
+    width: 250px;
+  }
+  .skills-section .box .skills-list {
+    padding: 1.5rem .5rem;
+  }
+  .skills-section .box .progress-container h4 {
+    font-size: 60%;
+    left: 10px;
+  }
+  .project-section .project-types li {
+    font-size: 66%;
+    margin-left: 10px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

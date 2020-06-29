@@ -14,6 +14,7 @@ html {
   text-rendering: optimizeLegibility;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 1px;
+  line-height: 1.3;
 }
 
 // ----------------------------------------------
@@ -66,6 +67,8 @@ h2 {
   display: inline-block;
   position: relative;
   margin-bottom: 3rem;
+  margin-left: 15px !important;
+  margin-right: 15px !important;
   h1 {
     &::before {
       position: absolute;
@@ -155,7 +158,7 @@ h2 {
     }
 
     .project-tile {
-      // margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
 
       .card {
         background-color: $bg-grey-dark;
@@ -170,7 +173,7 @@ h2 {
           }
           .desc {
             color: #000000;
-            font-size: 60%;
+            font-size: 66%;
             padding-top: 1rem;
             text-align: justify;
           }
@@ -209,60 +212,59 @@ h2 {
   }
 
   .contact-boxes {
+    margin-bottom: 2rem;
     border: 3px solid #383636;
-    padding: 40px 20px;
+    padding: 0 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
-    .contact-box {
-      margin-bottom: 20px;
-      &:last-child {
-        margin: 0;
-      }
-      .title-box {
-        margin-bottom: 20px;
-        h4 {
-          position: relative;
-          background: linear-gradient(135deg, #319be6 0%, #16c0f0 100%);
-          color: #fff;
-          padding: 8px 0;
-          font-size: 70%;
-          font-weight: 600;
-          letter-spacing: 1px;
+    .title-box {
+      h4 {
+        position: relative;
+        background: linear-gradient(135deg, #319be6 0%, #16c0f0 100%);
+        color: #fff;
+        padding: 8px 0;
+        font-size: 70%;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-align: center;
+        border-radius: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -14px;
+          left: 50%;
+          display: block;
+          border: 7px solid;
+          border-color: #45a9c5 transparent transparent transparent;
+          -webkit-transform: translateX(-50%);
+          -moz-transform: translateX(-50%);
+          -o-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+        }
+        .icon-box {
+          font-size: 150%;
           text-align: center;
-          border-radius: 24px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          &::before {
-            content: "";
-            position: absolute;
-            bottom: -14px;
-            left: 50%;
-            display: block;
-            border: 7px solid;
-            border-color: #45a9c5 transparent transparent transparent;
-            -webkit-transform: translateX(-50%);
-            -moz-transform: translateX(-50%);
-            -o-transform: translateX(-50%);
-            -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
-          }
-          .icon-box {
-            font-size: 150%;
-            text-align: center;
-            border-radius: 50%;
-            color: #fff;
-            margin-right: 0.3rem;
-          }
+          border-radius: 50%;
+          color: #fff;
+          margin-right: 0.3rem;
         }
       }
     }
+
     .content-box {
-      font-size: 70%;
+      font-size: 66%;
+      margin-top: 0.8rem;
       p {
         margin-bottom: 0;
-        line-height: 20px;
-        font-weight: 600;
+        font-weight: 400;
         color: #c2c0c3;
         letter-spacing: 1px;
         text-align: center;
@@ -274,18 +276,18 @@ h2 {
   }
 
   .form {
-    text-align: end;
     border: 3px solid #383636;
-    padding: 60px 20px;
+    padding: 0 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-left: 1rem;
-
-    div {
-      margin-bottom: 1.78rem;
-    }
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
     .button {
       margin: 0;
+      display: block;
+      text-align: center;
     }
   }
 
@@ -401,11 +403,171 @@ footer {
       }
     }
   }
-  
+
+  html {
+    font-size: 19px;
+  }
+
+  .contact-me-section {
+    .contact-boxes {
+      .content-box {
+        font-size: 55%;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .row {
     max-width: 540px;
   }
+
+  header{
+    .container{
+      font-size: 90%;
+    }
+  }
+
+
+}
+
+@media screen and (min-width: 530px) and (max-width: 575px) {
+  
+  header{
+    .container{
+      font-size: 90%;
+    }
+  }
+
+  .project-section {
+    .project-types {
+      li{
+        font-size: 70%;
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: 450px) and (max-width: 529px) {
+  header{
+    .container{
+      font-size: 90%;
+      .name{
+        font-size: 260%;
+      }
+    }
+  }
+
+  .project-section {
+    .project-types {
+      li{
+        font-size: 66%;
+      }
+    }
+  }
+
+  .skills-section{
+    .box{
+      .progress-container{
+        h4{
+          font-size: 60%;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: 360px) and (max-width: 449px) {
+  header{
+    .container{
+      font-size: 90%;
+      .name{
+        font-size: 230%;
+      }
+    }
+  }
+
+  .skills-section{
+    .box{
+
+      .skills-list {
+        padding: 1.5rem .5rem;
+      }
+
+      .progress-container{
+        h4{
+          font-size: 58%;
+          left: 20px;
+        }
+      }
+    }
+  }
+
+  .project-section {
+    .project-types {
+      li{
+        font-size: 66%;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  footer{
+    .copy{
+      font-size: 60%;
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 359px) {
+  
+  html{
+    font-size: 15px;
+  }
+
+  header{
+    .container{
+      font-size: 90%;
+      .name{
+        font-size: 230%;
+      }
+    }
+
+    .mobile-nav{
+      ul{
+        width: 250px;
+      }
+    }
+
+  }
+
+  .skills-section{
+    .box{
+
+      .skills-list {
+        padding: 1.5rem .5rem;
+      }
+
+      .progress-container{
+        h4{
+          font-size: 60%;
+          left: 10px;
+        }
+      }
+    }
+  }
+
+  .project-section {
+    .project-types {
+      li{
+        font-size: 66%;
+        margin-left: 10px;
+      }
+    }
+  }
+
 }

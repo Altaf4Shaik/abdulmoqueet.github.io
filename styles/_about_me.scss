@@ -1,8 +1,13 @@
 .about-me-section {
     background-color: $bg-grey-light;
     padding: 5rem 0;
+
+    .main-title{
+      margin: 0;
+    }
   
     .left {
+      margin-top: 3rem;
       h2 {
         position: relative;
         margin-bottom: 2rem;
@@ -27,7 +32,7 @@
   
     .box {
       position: relative;
-      // margin-top: 3rem;
+      margin-top: 3rem;
       background-color: $bg-grey-dark;
       padding: 1.5rem;
       // margin-right: 13px;

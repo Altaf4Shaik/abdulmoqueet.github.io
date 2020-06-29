@@ -11,6 +11,9 @@
     .skill-type {
       display: flex;
       justify-content: space-between;
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 80%;
       div {
         position: relative;
         background-color: $bg-grey-light;
@@ -50,6 +53,8 @@
   
     .box {
       background-color: $bg-grey-light;
+      margin-left: 15px;
+      margin-right: 15px;
   
       .progress-container {
         position: relative;
