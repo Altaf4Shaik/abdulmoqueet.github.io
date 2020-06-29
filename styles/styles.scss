@@ -151,7 +151,7 @@ h2 {
     padding: 2rem 0;
 
     .flex-wrapper {
-      height: 220px;
+      height: 200px;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
@@ -170,6 +170,8 @@ h2 {
           .title {
             color: #000000;
             font-weight: 600;
+            font-size: 85%;
+
           }
           .desc {
             color: #000000;

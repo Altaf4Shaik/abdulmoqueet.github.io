@@ -1,19 +1,18 @@
-$(document).ready(() => {
+$(document).ready(function () {
 
-    var timer = null;
-
-    $('#section-about-me').waypoint(function () {
+    $('#about').waypoint(function () {
         $("#main-nav-container").toggleClass("main-nav-active");
     }, {
         offset: '100px'
     });
 
-    $('#section-about-me').waypoint(function (direction) {
+    $('#about').waypoint(function (direction) {
 
-        if (direction === 'down')
+        if (direction === 'down') {
             $("#main-nav-container").css("top", "0");
-        else
+        } else {
             $("#main-nav-container").css("top", "-80px");
+        }
 
     }, {
         offset: '55px'
@@ -28,7 +27,57 @@ $(document).ready(() => {
         $(".nav-burger .line-2").toggleClass("nav-burger-active-line-2");
 
         $(".mobile-nav ul").toggleClass("left-nav-peek");
-        // $("body").toggleClass("body-scroll-disable");
+    });
+
+
+    // Isotope Scritp--------------
+    var projectItems = $(".project-items"),
+        projectFilter = $(".project-filter");
+
+    var grid = projectItems.isotope({
+        itemSelector: ".project-tile",
+        percentPosition: true,
+        masonry: {
+            columnWidth: ".project-tile",
+        },
+    });
+    projectFilter.on("click", "li", function () {
+        projectFilter.find(".active").removeClass("active");
+        $(this).addClass("active");
+        var filterValue = $(this).attr("data-filter");
+        grid.isotope({ filter: filterValue });
+    });
+    // ----------------------------------------
+
+    // jQuery Scrolling--------------------
+    $(document).on("click", "a.scroll-easing", function () {
+        var anchor = $(this);
+
+        if (anchor.hasClass("mob-nav")) {
+
+            $(".nav-burger .line-1, .nav-burger .line-3").toggleClass("nav-burger-active");
+            $(".nav-burger .line-2").toggleClass("nav-burger-active-line-2");
+            $(".mobile-nav ul").toggleClass("left-nav-peek");
+
+            setTimeout(function () {
+                scrollOn();
+            }, 500);
+
+        } else {
+            scrollOn();
+        }
+
+        function scrollOn() {
+            $("html, body").stop().animate(
+                {
+                    scrollTop: $(anchor.attr("href")).offset().top,
+                },
+                1250,
+                "easeInOutExpo"
+            );
+        }
+
+        event.preventDefault();
     });
 
 });

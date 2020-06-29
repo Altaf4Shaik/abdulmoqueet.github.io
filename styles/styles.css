@@ -674,7 +674,7 @@ header .discover .icon {
 }
 
 .project-section .project-items .flex-wrapper {
-  height: 220px;
+  height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -704,6 +704,7 @@ header .discover .icon {
 .project-section .project-items .project-tile .card .project-desc-box .title {
   color: #000000;
   font-weight: 600;
+  font-size: 85%;
 }
 
 .project-section .project-items .project-tile .card .project-desc-box .desc {
