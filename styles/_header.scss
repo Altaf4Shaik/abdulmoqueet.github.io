@@ -139,6 +139,7 @@ header {
         border-bottom: 1px solid #292929;
         padding: 15px 28px;
         font-size: 80%;
+        
       }
   
       .logo {
@@ -199,9 +200,12 @@ header {
     position: absolute;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
+    color: #fff;
+    text-decoration: none;
     right: 40px;
     bottom: 40px;
     text-transform: uppercase;
+    display: block;
     font-weight: 600;
     font-size: 80%;
     cursor: pointer;

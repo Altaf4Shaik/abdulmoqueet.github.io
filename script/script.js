@@ -2,6 +2,81 @@ $(document).ready(function () {
 
     var currentSection = "";
 
+    var professionalSkills = [
+        {
+            name: "HTML5 &amp; CSS3",
+            percentage: "95%"
+        },
+        {
+            name: "JavaScript",
+            percentage: "85%"
+        },
+        {
+            name: "React.js",
+            percentage: "80%"
+        },
+        {
+            name: "Node.js",
+            percentage: "80%"
+        },
+        {
+            name: "Express.js",
+            percentage: "80%"
+        },
+        {
+            name: "MongoDB",
+            percentage: "70%"
+        },
+        {
+            name: "JQuery",
+            percentage: "85%"
+        },
+        {
+            name: "Core Java",
+            percentage: "90%"
+        },
+        {
+            name: "MySQL",
+            percentage: "70%"
+        },
+        {
+            name: "Git and Github",
+            percentage: "70%"
+        },
+        {
+            name: "Restful API",
+            percentage: "60%"
+        },
+        {
+            name: "WordPress",
+            percentage: "80%"
+        },
+        {
+            name: "UI/UX",
+            percentage: "85%"
+        }
+    ];
+
+    var personalSkills = [
+        {
+            name: "Communication",
+            percentage: "80%"
+        },
+        {
+            name: "Team Work",
+            percentage: "80%"
+        },
+        {
+            name: "Self Motivation",
+            percentage: "75%"
+        },
+        {
+            name: "Speed",
+            percentage: "70%"
+        }
+    ];
+
+
     $('#about').waypoint(function () {
         $("#main-nav-container").toggleClass("main-nav-active");
     }, {
@@ -26,7 +101,7 @@ $(document).ready(function () {
 
     $(".nav-burger").click(function () {
 
-        if(currentSection!="")
+        if (currentSection != "")
             helightCurrentSection();
 
         $(".nav-burger .line-1, .nav-burger .line-3").toggleClass("nav-burger-active");
@@ -34,17 +109,67 @@ $(document).ready(function () {
         $(".mobile-nav ul").toggleClass("left-nav-peek");
 
 
-        function helightCurrentSection(){
-            
+        function helightCurrentSection() {
+
             var mobileNavLinks = $(".mobile-nav .mob-nav");
 
-            mobileNavLinks.each(function(){
+            mobileNavLinks.each(function () {
                 $(this).removeClass('nav-active');
-                if($(this).attr("href")=="#"+currentSection.attr('id'))
+                if ($(this).attr("href") == "#" + currentSection.attr('id'))
                     $(this).addClass("nav-active");
             });
         }
 
+    });
+
+    // Skill Buttons Click-------------
+    $(".skill-type .professional").click(function () {
+        $(this).addClass("active");
+        $(".skill-type .personal").removeClass("active");
+        populateSkills(true);
+    });
+
+    $(".skill-type .personal").click(function () {
+        $(this).addClass("active");
+        $(".skill-type .professional").removeClass("active");
+        populateSkills(false);
+    });
+
+    function populateSkills(isProfessional) {
+
+        var skills = "";
+
+        if (isProfessional) {
+
+            for (var i = 0; i < professionalSkills.length; i++) {
+                skills += `<div class="progress-container">
+                <div class="progress-bar" style="width: ${professionalSkills[i].percentage};"></div>
+                <h4>${professionalSkills[i].name}<span>${professionalSkills[i].percentage}</span></h4>
+            </div>`
+            }
+
+        } else {
+
+            for (var i = 0; i < personalSkills.length; i++) {
+                skills += `<div class="progress-container">
+                <div class="progress-bar" style="width: ${personalSkills[i].percentage};"></div>
+                <h4>${personalSkills[i].name}<span>${personalSkills[i].percentage}</span></h4>
+            </div>`
+            }
+        }
+
+        $(".skills-list").html(skills);
+
+    }
+
+    populateSkills(true);
+
+    // Send Mail--------------------
+    $('#sendMail').click(function () {
+        var email = 'moqueetabdul@gmail.com';
+        var subject = $("#sub").val();
+        var msg = $("#msg").val();
+        document.location = "mailto:" + email + "?subject=" + subject + "&body=" + msg;
     });
 
 
@@ -61,9 +186,16 @@ $(document).ready(function () {
     });
     projectFilter.on("click", "li", function () {
         projectFilter.find(".active").removeClass("active");
-        $(this).addClass("active");
+        $(this).addClass("activ");
         var filterValue = $(this).attr("data-filter");
         grid.isotope({ filter: filterValue });
+
+        $(".project-filter li").each(function () {
+            $(this).removeClass('nav-active');
+        });
+
+        $(this).addClass("nav-active");
+
     });
     // ----------------------------------------
 
@@ -139,7 +271,6 @@ $(document).ready(function () {
                 if (!$navigationLink.hasClass('nav-active')) {
                     $navigationLinks.removeClass('nav-active');
                     $navigationLink.addClass('nav-active');
-                    console.log($navigationLink);
                 }
                 return false;
             }
@@ -149,3 +280,11 @@ $(document).ready(function () {
     $(window).scroll(throttle(highlightNavigation, 100));
 
 });
+
+function redirect(url) {
+
+    setTimeout(function () {
+        window.open(url, '_blank');
+    }, 500);
+
+}

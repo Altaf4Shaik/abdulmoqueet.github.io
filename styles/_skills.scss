@@ -40,14 +40,28 @@
   
       .personal {
         margin-left: 4px;
+        transition: background-color .6s;
         .triangle {
-          display: none;
+          opacity: 0;
+          transition: opacity .6s;
+        }
+      }
+
+      .professional {
+        margin-left: 4px;
+        transition: background-color .6s;
+        .triangle {
+          opacity: 0;
+          transition: opacity .6s;
         }
       }
   
       .active {
         background-color: $sky-color;
         color: #ffffff;
+        .triangle {
+          opacity: 1;
+        }
       }
     }
   

@@ -71,10 +71,11 @@
                         data-delay="100" data-deleteDelay="1000"></span>
                     <span class="cursor" data-owner="typerWords"></span>
                 </div>
-                <a href="#" class="button">HIRE ME</a>
+                <a href="#contact" class="scroll-easing button">HIRE ME</a>
             </div>
 
-            <div class="discover"><span class="material-icons icon">double_arrow</span> Discover</div>
+            <a href="#about" class="scroll-easing discover"><span class="material-icons icon">double_arrow</span>
+                Discover</a>
         </div>
 
     </header>
@@ -123,18 +124,39 @@
                     </ul>
                     <div class="social-media">
 
-                        <a href="#">
-                            <ion-icon class="icon" name="logo-github"></ion-icon>
-                        </a>
-                        <a href="#">
-                            <ion-icon class="icon" name="logo-stackoverflow"></ion-icon>
-                        </a>
-                        <a href="#">
-                            <ion-icon class="icon" name="logo-instagram"></ion-icon>
-                        </a>
-                        <a href="#">
-                            <ion-icon class="icon" name="logo-linkedin"></ion-icon>
-                        </a>
+                        <!-- <p>
+                            <ion-icon class="icon" name="logo-github"
+                                onclick="redirect('https://github.com/Abdul-Moqueet')"></ion-icon>
+                        </p>
+                        <p>
+                            <ion-icon class="icon" name="logo-stackoverflow"
+                                onclick="redirect('https://stackoverflow.com/users/6912209/abdul-moqueet')"></ion-icon>
+                        </p>
+                        <p>
+                            <ion-icon class="icon" name="logo-instagram"
+                                onclick="redirect('https://www.instagram.com/im_abdul_moqueet/')"></ion-icon>
+                        </p>
+                        <p>
+                            <ion-icon class="icon" name="logo-linkedin"
+                                onclick="redirect('https://www.linkedin.com/in/abdul-moqueet/')"></ion-icon>
+                        </p> -->
+
+                        <p>
+                            <ion-icon class="icon" name="logo-github"
+                                onclick="redirect('https://github.com/Abdul-Moqueet')"></ion-icon>
+                        </p>
+                        <p>
+                            <ion-icon class="icon" name="logo-linkedin"
+                                onclick="redirect('https://www.linkedin.com/in/abdul-moqueet/')"></ion-icon>
+                        </p>
+                        <p>
+                            <ion-icon class="icon" name="logo-stackoverflow"
+                                onclick="redirect('https://stackoverflow.com/users/6912209/abdul-moqueet')"></ion-icon>
+                        </p>
+                        <p>
+                            <ion-icon class="icon" name="logo-instagram"
+                                onclick="redirect('https://www.instagram.com/im_abdul_moqueet/')"></ion-icon>
+                        </p>
 
                     </div>
                 </div>
@@ -166,76 +188,8 @@
             <div class="box">
 
                 <div class="skills-list">
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 95%;"></div>
-                        <h4>HTML5 &amp; CSS3<span>95%</span></h4>
-                    </div>
 
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 85%;"></div>
-                        <h4>JavaScript<span>85%</span></h4>
-                    </div>
-
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 80%;"></div>
-                        <h4>React.js<span>80%</span></h4>
-                    </div>
-
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 80%;"></div>
-                        <h4>Node.js<span>80%</span></h4>
-                    </div>
-
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 80%;"></div>
-                        <h4>Express.js<span>80%</span></h4>
-                    </div>
-
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 75%;"></div>
-                        <h4>BootStrap<span>75%</span></h4>
-                    </div>
-
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 85%;"></div>
-                        <h4>JQuery<span>85%</span></h4>
-                    </div>
-
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 90%;"></div>
-                        <h4>Core Java<span>90%</span></h4>
-                    </div>
-
-
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 70%;"></div>
-                        <h4>MongoDB<span>70%</span></h4>
-                    </div>
-
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 70%;"></div>
-                        <h4>MySQL<span>70%</span></h4>
-                    </div>
-
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 80%;"></div>
-                        <h4>Git &amp; Github<span>80%</span></h4>
-                    </div>
-
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 60%;"></div>
-                        <h4>RESTful API<span>60%</span></h4>
-                    </div>
-
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 80%;"></div>
-                        <h4>WordPress<span>80%</span></h4>
-                    </div>
-
-                    <div class="progress-container">
-                        <div class="progress-bar" style="width: 85%;"></div>
-                        <h4>UI / UX<span>85%</span></h4>
-                    </div>
+                    <!-- Appending Skills From Javascript -->
 
                 </div>
 
@@ -431,7 +385,7 @@
                         <textarea id="msg" name="story" rows="5" cols="33"></textarea>
                     </div>
 
-                    <div class="button">Send Mail</div>
+                    <div class="button" id="sendMail">Send Mail</div>
                 </form>
             </div>
 
@@ -442,18 +396,24 @@
         <h2 class="logo"><span>M</span>oqueet</h2>
 
         <div class="social-links">
-            <a href="#">
-                <ion-icon class="icon" name="logo-github"></ion-icon>
-            </a>
-            <a href="#">
-                <ion-icon class="icon" name="logo-stackoverflow"></ion-icon>
-            </a>
-            <a href="#">
-                <ion-icon class="icon" name="logo-instagram"></ion-icon>
-            </a>
-            <a href="#">
-                <ion-icon class="icon" name="logo-linkedin"></ion-icon>
-            </a>
+            
+            <p>
+                <ion-icon class="icon" name="logo-github"
+                    onclick="redirect('https://github.com/Abdul-Moqueet')"></ion-icon>
+            </p>
+            <p>
+                <ion-icon class="icon" name="logo-linkedin"
+                    onclick="redirect('https://www.linkedin.com/in/abdul-moqueet/')"></ion-icon>
+            </p>
+            <p>
+                <ion-icon class="icon" name="logo-stackoverflow"
+                    onclick="redirect('https://stackoverflow.com/users/6912209/abdul-moqueet')"></ion-icon>
+            </p>
+            <p>
+                <ion-icon class="icon" name="logo-instagram"
+                    onclick="redirect('https://www.instagram.com/im_abdul_moqueet/')"></ion-icon>
+            </p>
+
         </div>
 
         <div class="copy">

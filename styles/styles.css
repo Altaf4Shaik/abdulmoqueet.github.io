@@ -14,6 +14,11 @@ html {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 1px;
   line-height: 1.3;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 h1,
@@ -47,14 +52,12 @@ h2 {
   border-radius: 50px;
   display: inline-block;
   margin-top: 3.5rem;
-  -webkit-transition: background-color 0.4s;
-  transition: background-color 0.4s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .button:hover {
-  background-color: #129ac0;
-  -webkit-animation: hire-me_animation 1.5s infinite ease-in-out;
-          animation: hire-me_animation 1.5s infinite ease-in-out;
+  background: linear-gradient(135deg, #0d718d 0%, #0d718d 100%);
 }
 
 .main-title {
@@ -324,9 +327,12 @@ header .discover {
           writing-mode: vertical-lr;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  color: #fff;
+  text-decoration: none;
   right: 40px;
   bottom: 40px;
   text-transform: uppercase;
+  display: block;
   font-weight: 600;
   font-size: 80%;
   cursor: pointer;
@@ -487,8 +493,9 @@ header .discover .icon {
 
 .about-me-section .box .social-media .icon {
   color: #ffffff;
-  -webkit-transition: 0.6s all;
-  transition: 0.6s all;
+  cursor: pointer;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
 }
 
 .about-me-section .box .social-media .icon:hover {
@@ -546,15 +553,35 @@ header .discover .icon {
 
 .skills-section .skill-type .personal {
   margin-left: 4px;
+  -webkit-transition: background-color .6s;
+  transition: background-color .6s;
 }
 
 .skills-section .skill-type .personal .triangle {
-  display: none;
+  opacity: 0;
+  -webkit-transition: opacity .6s;
+  transition: opacity .6s;
+}
+
+.skills-section .skill-type .professional {
+  margin-left: 4px;
+  -webkit-transition: background-color .6s;
+  transition: background-color .6s;
+}
+
+.skills-section .skill-type .professional .triangle {
+  opacity: 0;
+  -webkit-transition: opacity .6s;
+  transition: opacity .6s;
 }
 
 .skills-section .skill-type .active {
   background-color: #16C0F0;
   color: #ffffff;
+}
+
+.skills-section .skill-type .active .triangle {
+  opacity: 1;
 }
 
 .skills-section .box {
@@ -634,6 +661,7 @@ header .discover .icon {
 
 .project-section .project-types ul {
   list-style: none;
+  padding: 0 1rem;
 }
 
 .project-section .project-types li {
@@ -695,6 +723,15 @@ header .discover .icon {
 .project-section .project-items .project-tile .card {
   background-color: #252525;
   background-color: #ffffff;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.project-section .project-items .project-tile .card:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .project-section .project-items .project-tile .card .project-desc-box {
@@ -711,12 +748,12 @@ header .discover .icon {
 .project-section .project-items .project-tile .card .project-desc-box .desc {
   color: #000000;
   font-size: 66%;
-  padding-top: 1rem;
+  padding-top: 0.6rem;
   text-align: justify;
 }
 
 .project-section .project-items .project-tile .image {
-  height: 270px;
+  height: 260px;
   background-size: cover;
 }
 
@@ -841,7 +878,6 @@ header .discover .icon {
 
 .contact-me-section .form .button {
   margin: 0;
-  display: block;
   text-align: center;
 }
 
@@ -910,23 +946,22 @@ footer .social-links {
   font-size: 120%;
 }
 
-footer .social-links a {
-  text-decoration: none;
+footer .social-links p {
   margin-left: 0.8rem;
   display: inline-block;
   color: #fff;
 }
 
-footer .social-links a:first-child {
+footer .social-links p:first-child {
   margin: 0;
 }
 
-footer .social-links a .icon {
+footer .social-links .icon {
   -webkit-transition: 0.6s all;
   transition: 0.6s all;
 }
 
-footer .social-links a .icon:hover {
+footer .social-links .icon:hover {
   color: #16C0F0;
   -webkit-transform: scale(1.2) rotate(360deg);
           transform: scale(1.2) rotate(360deg);
@@ -970,14 +1005,25 @@ footer .copy {
   header .container {
     font-size: 90%;
   }
+  .project-section .project-items .project-tile .card:hover {
+    -webkit-transform: translateY(0) !important;
+            transform: translateY(0) !important;
+  }
 }
 
 @media screen and (min-width: 530px) and (max-width: 575px) {
   header .container {
     font-size: 90%;
   }
+  header .discover {
+    right: 30px;
+  }
   .project-section .project-types li {
     font-size: 70%;
+  }
+  .project-section .project-items .project-tile .card:hover {
+    -webkit-transform: translateY(0) !important;
+            transform: translateY(0) !important;
   }
 }
 
@@ -988,8 +1034,15 @@ footer .copy {
   header .container .name {
     font-size: 260%;
   }
+  header .discover {
+    right: 30px;
+  }
   .project-section .project-types li {
     font-size: 66%;
+  }
+  .project-section .project-items .project-tile .card:hover {
+    -webkit-transform: translateY(0) !important;
+            transform: translateY(0) !important;
   }
   .skills-section .box .progress-container h4 {
     font-size: 60%;
@@ -1003,16 +1056,23 @@ footer .copy {
   header .container .name {
     font-size: 230%;
   }
+  header .discover {
+    right: 20px;
+  }
   .skills-section .box .skills-list {
-    padding: 1.5rem .5rem;
+    padding: 1.5rem 0.5rem;
   }
   .skills-section .box .progress-container h4 {
     font-size: 58%;
     left: 20px;
   }
   .project-section .project-types li {
-    font-size: 66%;
+    font-size: 70%;
     margin-left: 10px;
+  }
+  .project-section .project-items .project-tile .card:hover {
+    -webkit-transform: translateY(0) !important;
+            transform: translateY(0) !important;
   }
   footer .copy {
     font-size: 60%;
@@ -1032,8 +1092,11 @@ footer .copy {
   header .mobile-nav ul {
     width: 250px;
   }
+  header .discover {
+    right: 20px;
+  }
   .skills-section .box .skills-list {
-    padding: 1.5rem .5rem;
+    padding: 1.5rem 0.5rem;
   }
   .skills-section .box .progress-container h4 {
     font-size: 60%;
@@ -1042,6 +1105,10 @@ footer .copy {
   .project-section .project-types li {
     font-size: 66%;
     margin-left: 10px;
+  }
+  .project-section .project-items .project-tile .card:hover {
+    -webkit-transform: translateY(0) !important;
+            transform: translateY(0) !important;
   }
 }
 /*# sourceMappingURL=styles.css.map */
