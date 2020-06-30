@@ -279,6 +279,15 @@ $(document).ready(function () {
 
     $(window).scroll(throttle(highlightNavigation, 100));
 
+    AOS.init({
+        easing: 'ease-out-back',
+        duration: 1200,
+        delay: 100,
+        mirror: true,
+        anchorPlacement: 'bottom-bottom',
+        offset: 160
+    });
+
 });
 
 function redirect(url) {
