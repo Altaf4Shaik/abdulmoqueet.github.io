@@ -610,6 +610,7 @@ header .discover .icon {
   background-color: #16C0F0;
   height: 4px;
   border-radius: 5px;
+  width: 0;
 }
 
 .skills-section .box .progress-container h4 {

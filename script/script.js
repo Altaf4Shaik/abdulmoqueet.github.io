@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    var currentSection = "";
+    var currentSection = "", firstRun = true;
 
     var professionalSkills = [
         {
@@ -127,12 +127,14 @@ $(document).ready(function () {
         $(this).addClass("active");
         $(".skill-type .personal").removeClass("active");
         populateSkills(true);
+        skillsPogress(true);
     });
 
     $(".skill-type .personal").click(function () {
         $(this).addClass("active");
         $(".skill-type .professional").removeClass("active");
         populateSkills(false);
+        skillsPogress(false);
     });
 
     function populateSkills(isProfessional) {
@@ -143,7 +145,7 @@ $(document).ready(function () {
 
             for (var i = 0; i < professionalSkills.length; i++) {
                 skills += `<div class="progress-container">
-                <div class="progress-bar" style="width: ${professionalSkills[i].percentage};"></div>
+                <div class="progress-bar"></div>
                 <h4>${professionalSkills[i].name}<span>${professionalSkills[i].percentage}</span></h4>
             </div>`
             }
@@ -152,7 +154,7 @@ $(document).ready(function () {
 
             for (var i = 0; i < personalSkills.length; i++) {
                 skills += `<div class="progress-container">
-                <div class="progress-bar" style="width: ${personalSkills[i].percentage};"></div>
+                <div class="progress-bar"></div>
                 <h4>${personalSkills[i].name}<span>${personalSkills[i].percentage}</span></h4>
             </div>`
             }
@@ -229,6 +231,32 @@ $(document).ready(function () {
 
         event.preventDefault();
     });
+
+    // Skill Animation-----------------------------------
+    $('#skills').waypoint(function (direction) {
+        if (direction == "down") {
+            if (firstRun) {
+                skillsPogress(true);
+                firstRun = false;
+            }
+        }
+    });
+
+    function skillsPogress(isProfessional) {
+        console.log("called");
+        var i = 0;
+        if (isProfessional) {
+            $(".progress-container").each(function () {
+                var progressBar = $(this).find(".progress-bar");
+                progressBar.animate({ width: professionalSkills[i++].percentage }, 2000), "ease-out";
+            });
+        } else {
+            $(".progress-container").each(function () {
+                var progressBar = $(this).find(".progress-bar");
+                progressBar.animate({ width: personalSkills[i++].percentage }, 2000), "ease-out";
+            });
+        }
+    }
 
     // Heighlight Nav Menus-------------------------------
 
