@@ -1,6 +1,8 @@
 $(document).ready(function () {
 
-    var currentSection = "", firstRun = true;
+    var currentSection = "", 
+    firstRun = true,
+    timer = null;
 
     var professionalSkills = [
         {
@@ -315,6 +317,40 @@ $(document).ready(function () {
         anchorPlacement: 'bottom-bottom',
         offset: 160
     });
+
+    // Star-Brust ----------------------------
+
+    $("body").click((event) => {
+        star_brust(event);
+     });
+
+    function star_brust(event) {
+        let xPos = event.clientX,
+            yPos = event.clientY;
+
+        $(".star-brust").show().css({
+            "left": xPos,
+            "top": yPos,
+            "transform": "scale(0.7)",
+            "opacity": 1
+        });
+
+
+        if (timer) {
+            clearTimeout(timer);
+            timer = null;
+        }
+
+        timer = setTimeout(() => {
+
+            $(".star-brust").css({
+                "transform": "scale(0.4)",
+                "opacity": 0
+            });
+
+        }, 1200);
+    }
+
 
 });
 

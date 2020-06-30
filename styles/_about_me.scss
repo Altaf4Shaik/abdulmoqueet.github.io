@@ -31,6 +31,7 @@
     }
   
     .box {
+      user-select: text;
       position: relative;
       margin-top: 3rem;
       background-color: $bg-grey-dark;
