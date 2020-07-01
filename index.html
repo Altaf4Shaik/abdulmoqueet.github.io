@@ -11,6 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="styles/bootstrap.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -208,9 +209,12 @@
 
             <div class="project-items">
 
-                <div class="project-tile col-sm-6 col-md-4 java" data-aos="fade-up">
-                    <div class="card">
-                        <div class="image" style="background-image: url(img/library_management.png);"></div>
+                <div class="project-tile col-sm-6 col-md-4 java">
+                    <div class="card" data-src="img/library_management.png" data-fancybox data-caption="Caption for single image">
+                        
+                        <div class="image" style="background-image: url(img/library_management.png);">
+                            <img src="img/library_management.png">
+                        </div>
 
                         <div class="flex-wrapper">
                             <div class="project-desc-box">
@@ -233,9 +237,11 @@
 
                 </div>
 
-                <div class="project-tile col-sm-6 col-md-4 java" data-aos="fade-up">
-                    <div class="card">
-                        <div class="image" style="background-image: url(img/anime-web.png);"></div>
+                <div class="project-tile col-sm-6 col-md-4 java">
+                    <div class="card" data-src="img/anime-web.png" data-fancybox data-caption="Caption for single image">
+                        <div class="image" style="background-image: url(img/anime-web.png);">
+                            <img src="img/anime-web.png" >
+                        </div>
 
                         <div class="flex-wrapper">
                             <div class="project-desc-box">
@@ -257,13 +263,15 @@
 
                 </div>
 
-                <div class="project-tile col-sm-6 col-md-4 node" data-aos="fade-up">
-                    <div class="card">
-                        <div class="image" style="background-image: url(img/anime-web.png);"></div>
+                <div class="project-tile col-sm-6 col-md-4 node">
+                    <div class="card" data-fancybox data-type="iframe" data-src="https://abdul-moqueet.github.io/music-player" href="javascript:;">
+                        <div class="image" style="background-image: url(img/anime-web.png);">
+                            <img src="img/anime-web.png" >
+                        </div>
 
                         <div class="flex-wrapper">
                             <div class="project-desc-box">
-                                <div class="title">My Anime Web</div>
+                                <div class="title">Iframe Anime Web</div>
                                 <div class="desc">
                                     This is a fully responsive anime website. My Anime Web, using HTML, CSS as frontend
                                     and Javascript as backend. using HTML, CSS as frontend and Javascript as backend.
@@ -448,6 +456,7 @@
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script/floating-label.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="script/script.js"></script>
 
 </body>

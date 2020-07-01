@@ -348,9 +348,8 @@ $(document).ready(function () {
                 "opacity": 0
             });
 
-        }, 1200);
+        }, 800);
     }
-
 
 });
 

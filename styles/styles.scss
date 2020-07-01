@@ -97,6 +97,11 @@ h2 {
 // Header
 // ----------------------------------------------
 @import "star_brust";
+
+.fancybox-slide--iframe {
+  padding: 0 0rem;
+}
+
 // ----------------------------------------------
 // Header
 // ----------------------------------------------
@@ -169,6 +174,7 @@ h2 {
       .card {
         background-color: $bg-grey-dark;
         background-color: #ffffff;
+        overflow: hidden;
         transition: transform 0.4s;
 
         &:hover {
@@ -193,8 +199,13 @@ h2 {
       }
 
       .image {
+        position: relative;
         height: 260px;
         background-size: cover;
+        img {
+          position: absolute;
+          height: 100%;
+        }
       }
 
       .button-holder {
@@ -361,8 +372,7 @@ footer {
     margin: 0.7rem 0;
     font-size: 120%;
 
-
-    p{
+    p {
       margin-left: 0.8rem;
       display: inline-block;
       color: #fff;
@@ -372,9 +382,8 @@ footer {
     }
 
     .icon {
-      
       transition: 0.6s all;
-      
+
       &:hover {
         color: $sky-color;
         transform: scale(1.2) rotate(360deg);
@@ -442,18 +451,17 @@ footer {
     }
   }
 
-  .project-section{
-    .project-items{
-      .project-tile{
-        .card{
-          &:hover{
+  .project-section {
+    .project-items {
+      .project-tile {
+        .card {
+          &:hover {
             transform: translateY(0) !important;
           }
         }
       }
     }
   }
-
 }
 
 @media screen and (min-width: 530px) and (max-width: 575px) {
@@ -473,10 +481,10 @@ footer {
         font-size: 70%;
       }
     }
-    .project-items{
-      .project-tile{
-        .card{
-          &:hover{
+    .project-items {
+      .project-tile {
+        .card {
+          &:hover {
             transform: translateY(0) !important;
           }
         }
@@ -504,10 +512,10 @@ footer {
         font-size: 66%;
       }
     }
-    .project-items{
-      .project-tile{
-        .card{
-          &:hover{
+    .project-items {
+      .project-tile {
+        .card {
+          &:hover {
             transform: translateY(0) !important;
           }
         }
@@ -562,10 +570,10 @@ footer {
         margin-left: 10px;
       }
     }
-    .project-items{
-      .project-tile{
-        .card{
-          &:hover{
+    .project-items {
+      .project-tile {
+        .card {
+          &:hover {
             transform: translateY(0) !important;
           }
         }
@@ -626,10 +634,10 @@ footer {
         margin-left: 10px;
       }
     }
-    .project-items{
-      .project-tile{
-        .card{
-          &:hover{
+    .project-items {
+      .project-tile {
+        .card {
+          &:hover {
             transform: translateY(0) !important;
           }
         }
