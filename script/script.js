@@ -168,6 +168,9 @@ $(document).ready(function () {
 
     populateSkills(true);
 
+    $(".copy").text("© Abdul Moqueet | All Right Reserved "+new Date().getFullYear()+".");
+    
+
     // Send Mail--------------------
     $('#sendMail').click(function () {
         var email = 'moqueetabdul@gmail.com';

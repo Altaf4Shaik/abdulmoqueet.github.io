@@ -1,0 +1,258 @@
+@media screen and (min-width: 1200px) {
+    .row {
+      max-width: 1140px;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .row {
+      max-width: 960px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .row {
+      max-width: 720px;
+    }
+  
+    header {
+      .desktop-nav {
+        .main-nav {
+          li {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  
+    html {
+      font-size: 19px;
+    }
+  
+    .contact-me-section {
+      .contact-boxes {
+        .content-box {
+          font-size: 55%;
+        }
+      }
+    }
+  }
+  
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    .row {
+      max-width: 540px;
+    }
+  
+    header {
+      .container {
+        font-size: 90%;
+      }
+    }
+  
+    .project-section {
+      .project-items {
+        max-width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+        .project-tile { 
+          .card {
+            &:hover {
+              transform: translateY(0) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (min-width: 530px) and (max-width: 575px) {
+    header {
+      .container {
+        font-size: 90%;
+      }
+  
+      .discover {
+        right: 30px;
+      }
+    }
+  
+    .project-section {
+      .project-types {
+        li {
+          font-size: 70%;
+        }
+      }
+      .project-items {
+        max-width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+        .project-tile {
+          .card {
+            &:hover {
+              transform: translateY(0) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (min-width: 450px) and (max-width: 529px) {
+    header {
+      .container {
+        font-size: 90%;
+        .name {
+          font-size: 260%;
+        }
+      }
+      .discover {
+        right: 30px;
+      }
+    }
+  
+    .project-section {
+      .project-types {
+        li {
+          font-size: 66%;
+        }
+      }
+      .project-items {
+        max-width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+        .project-tile {
+          .card {
+            &:hover {
+              transform: translateY(0) !important;
+            }
+          }
+        }
+      }
+    }
+  
+    .skills-section {
+      .box {
+        .progress-container {
+          h4 {
+            font-size: 60%;
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (min-width: 360px) and (max-width: 449px) {
+    header {
+      .container {
+        font-size: 90%;
+        .name {
+          font-size: 230%;
+        }
+      }
+  
+      .discover {
+        right: 20px;
+      }
+    }
+  
+    .skills-section {
+      .box {
+        .skills-list {
+          padding: 1.5rem 0.5rem;
+        }
+  
+        .progress-container {
+          h4 {
+            font-size: 58%;
+            left: 20px;
+          }
+        }
+      }
+    }
+  
+    .project-section {
+      .project-types {
+        li {
+          font-size: 70%;
+          margin-left: 10px;
+        }
+      }
+      .project-items {
+        max-width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+        .project-tile {
+          .card {
+            &:hover {
+              transform: translateY(0) !important;
+            }
+          }
+        }
+      }
+    }
+  
+    footer {
+      .copy {
+        font-size: 60%;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 359px) {
+    html {
+      font-size: 15px;
+    }
+  
+    header {
+      .container {
+        font-size: 90%;
+        .name {
+          font-size: 230%;
+        }
+      }
+  
+      .mobile-nav {
+        ul {
+          width: 250px;
+        }
+      }
+  
+      .discover {
+        right: 20px;
+      }
+    }
+  
+    .skills-section {
+      .box {
+        .skills-list {
+          padding: 1.5rem 0.5rem;
+        }
+  
+        .progress-container {
+          h4 {
+            font-size: 60%;
+            left: 10px;
+          }
+        }
+      }
+    }
+  
+    .project-section {
+      .project-types {
+        li {
+          font-size: 66%;
+          margin-left: 10px;
+        }
+      }
+      .project-items {
+        .project-tile {
+          .card {
+            &:hover {
+              transform: translateY(0) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  

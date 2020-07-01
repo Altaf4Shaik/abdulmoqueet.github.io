@@ -769,7 +769,6 @@ header .discover .icon {
 .about-me-section .left .about-me-text {
   font-size: 75%;
   font-weight: 300;
-  text-align: justify;
 }
 
 .about-me-section .box {
@@ -820,7 +819,7 @@ header .discover .icon {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   right: -12px;
-  height: 76%;
+  height: 80%;
   width: 35px;
   background: linear-gradient(135deg, #16C0F0 0%, #129ac0 100%);
   display: -webkit-box;
@@ -1085,8 +1084,9 @@ header .discover .icon {
 }
 
 .project-section .project-items .project-tile .card .project-desc-box {
-  padding: 0 1rem;
+  padding: 15px 1rem;
   text-align: center;
+  max-height: 140px;
 }
 
 .project-section .project-items .project-tile .card .project-desc-box .title {
@@ -1098,19 +1098,24 @@ header .discover .icon {
 .project-section .project-items .project-tile .card .project-desc-box .desc {
   color: #000000;
   font-size: 66%;
-  padding-top: 0.6rem;
-  text-align: justify;
+  padding-top: 8px;
+  text-align: left;
 }
 
 .project-section .project-items .project-tile .image {
   position: relative;
   height: 260px;
   background-size: cover;
+  overflow: hidden;
 }
 
 .project-section .project-items .project-tile .image img {
   position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
   height: 100%;
+  opacity: 0;
 }
 
 .project-section .project-items .project-tile .button-holder {
@@ -1120,6 +1125,7 @@ header .discover .icon {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  padding-bottom: 15px;
 }
 
 .project-section .project-items .project-tile .button-holder .button {
@@ -1365,6 +1371,11 @@ footer .copy {
   header .container {
     font-size: 90%;
   }
+  .project-section .project-items {
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .project-section .project-items .project-tile .card:hover {
     -webkit-transform: translateY(0) !important;
             transform: translateY(0) !important;
@@ -1380,6 +1391,11 @@ footer .copy {
   }
   .project-section .project-types li {
     font-size: 70%;
+  }
+  .project-section .project-items {
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .project-section .project-items .project-tile .card:hover {
     -webkit-transform: translateY(0) !important;
@@ -1399,6 +1415,11 @@ footer .copy {
   }
   .project-section .project-types li {
     font-size: 66%;
+  }
+  .project-section .project-items {
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .project-section .project-items .project-tile .card:hover {
     -webkit-transform: translateY(0) !important;
@@ -1429,6 +1450,11 @@ footer .copy {
   .project-section .project-types li {
     font-size: 70%;
     margin-left: 10px;
+  }
+  .project-section .project-items {
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .project-section .project-items .project-tile .card:hover {
     -webkit-transform: translateY(0) !important;

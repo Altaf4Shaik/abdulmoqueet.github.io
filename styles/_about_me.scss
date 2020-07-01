@@ -26,7 +26,6 @@
       .about-me-text {
         font-size: 75%;
         font-weight: 300;
-        text-align: justify;
       }
     }
   
@@ -67,7 +66,7 @@
         top: 50%;
         transform: translateY(-50%);
         right: -12px;
-        height: 76%;
+        height: 80%;
         width: 35px;
         background: linear-gradient(135deg, $sky-color 0%, $sky-color-dark 100%);
         display: flex;
