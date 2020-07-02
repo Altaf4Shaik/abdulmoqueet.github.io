@@ -366,6 +366,15 @@ $(document).ready(function () {
         }, 800);
     }
 
+    $('[data-fancybox]').fancybox({
+        iframe : {
+            css : {
+                width : '100%',
+                height: '100vh'
+            }
+        }
+    })
+
 });
 
 function redirect(url) {
