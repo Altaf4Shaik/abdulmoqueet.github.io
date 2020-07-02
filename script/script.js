@@ -1,8 +1,18 @@
+window.onload = function() {
+    
+    setTimeout( function(){
+        document.querySelector('.loader').style.display='none';
+        document.body.style.overflow="visible";
+    }, 2500);
+
+};
+
+
 $(document).ready(function () {
 
-    var currentSection = "", 
-    firstRun = true,
-    timer = null;
+    var currentSection = "",
+        firstRun = true,
+        timer = null;
 
     var professionalSkills = [
         {
@@ -166,10 +176,12 @@ $(document).ready(function () {
 
     }
 
+    // populating my stuffs
     populateSkills(true);
+    generateMyProjects();
 
-    $(".copy").text("© Abdul Moqueet | All Right Reserved "+new Date().getFullYear()+".");
-    
+    $(".copy").text("© Abdul Moqueet | All Right Reserved " + new Date().getFullYear() + ".");
+
 
     // Send Mail--------------------
     $('#sendMail').click(function () {
@@ -325,7 +337,7 @@ $(document).ready(function () {
 
     $("body").click((event) => {
         star_brust(event);
-     });
+    });
 
     function star_brust(event) {
         let xPos = event.clientX,
