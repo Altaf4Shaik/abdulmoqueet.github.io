@@ -5,27 +5,17 @@ var myProjects = [
         desc: "A fully responsive Music Player, works best on phones/tabs not suitable for laptops/desktops.",
         isotopeCategory: "web",
         dataSrcThumb: "music_player.png",
-        githubLink: "",
-        liveUrl: "music-player/"
-    },
-
-    {
-        isLive: true,
-        title: "My Portfolio",
-        desc: "A fully responsive grid based portfolio website, Yes the one which you are already on.",
-        isotopeCategory: "web",
-        dataSrcThumb: "portfolio.png",
-        githubLink: "",
-        liveUrl: ""
+        githubLink: "music-player/",
+        liveUrl: "https://abdulmoqueet.github.io/music-player/"
     },
 
     {
         isLive: false,
-        title: "Institute Management System",
-        desc: "A javaFX project, Using JavaFX framework, FXML as frontend. SQLite DataBase as backend",
-        isotopeCategory: "javaFX",
-        dataSrcThumb: "institute.png",
-        githubLink: "https://google.com"
+        title: "My Portfolio",
+        desc: "A fully responsive grid based portfolio website. where you can see all my works. Yes, the one which you are already on.",
+        isotopeCategory: "web",
+        dataSrcThumb: "portfolio.png",
+        githubLink: "abdulmoqueet.github.io/"
     },
 
     {
@@ -34,8 +24,17 @@ var myProjects = [
         desc: "A Website with super smooth animations and transitions, Dedicated to anime",
         isotopeCategory: "web",
         dataSrcThumb: "anime-web.png",
-        githubLink: "",
-        liveUrl: "my-anime-web"
+        githubLink: "my-anime-web/",
+        liveUrl: "https://abdulmoqueet.github.io/my-anime-web/"
+    },
+
+    {
+        isLive: false,
+        title: "Institute Management System",
+        desc: "A javaFX project, Using JavaFX framework, FXML as frontend. SQLite DataBase as backend",
+        isotopeCategory: "javaFX",
+        dataSrcThumb: "institute.png",
+        githubLink: "Institute-Management-System/"
     },
 
     {
@@ -44,7 +43,7 @@ var myProjects = [
         desc: "An Android App, using XML as frontend and JAVA as backend. I have used android.telephony api. This app can find a lost with just a SMS",
         isotopeCategory: "android",
         dataSrcThumb: "find_my_phone.png",
-        githubLink: "https://google.com"
+        githubLink: "FindMyPhone/"
     },
 
     {
@@ -53,7 +52,17 @@ var myProjects = [
         desc: "A javaFX project, Using JavaFX framework, FXML as frontend. Oracle DataBase as backend",
         isotopeCategory: "javaFX",
         dataSrcThumb: "library_management.png",
-        githubLink: "https://google.com"
+        githubLink: "Library-Management-System/"
+    },
+
+    {
+        isLive: true,
+        title: "First React App",
+        desc: "This is very simple, My very First React App.",
+        isotopeCategory: "react",
+        dataSrcThumb: "1k.png",
+        githubLink: "first-react-app/",
+        liveUrl: "https://abdulmoqueet.github.io/first-react-app/"
     },
 
     {
@@ -62,7 +71,7 @@ var myProjects = [
         desc: "An Android App Live Currency Converter, using XML as frontend, Live Currency Api for data source and JAVA as backend.",
         isotopeCategory: "android",
         dataSrcThumb: "live_currency_converter.png",
-        githubLink: "https://google.com"
+        githubLink: "Live-Currency-Converter/"
     }
 
 ];
@@ -78,7 +87,7 @@ function generateMyProjects() {
             projects += `<div class="project-tile col-sm-6 col-md-4 ${myProjects[i].isotopeCategory}">
             <div class="card">
                 <div class="image" style="background-image: url(${"img/thumbs/"+myProjects[i].dataSrcThumb});" 
-                data-fancybox data-type="iframe" data-src="${"https://abdulmoqueet.github.io/"+myProjects[i].liveUrl}" href="javascript:;">
+                data-fancybox data-type="iframe" data-src="${myProjects[i].liveUrl}" href="javascript:;">
                 </div>
 
                 <div class="flex-wrapper">
@@ -88,8 +97,8 @@ function generateMyProjects() {
                     </div>
 
                     <div class="button-holder">
-                        <a class="button" data-fancybox data-type="iframe" data-src="${"https://abdulmoqueet.github.io/"+myProjects[i].liveUrl}" href="javascript:;">Live Preview</a>
-                        <a href="${myProjects[i].githubLink}" class="button" target="_blank">Source Code</a>
+                        <a class="button" data-fancybox data-type="iframe" data-src="${myProjects[i].liveUrl}" href="javascript:;">Live Preview</a>
+                        <a href="${"https://github.com/AbdulMoqueet/"+myProjects[i].githubLink}" class="button" target="_blank">Source Code</a>
                     </div>
                 </div>
 
@@ -117,7 +126,7 @@ function generateMyProjects() {
                     ScreenShots
                     <img class="live-thumb" src="${myProjects[i].dataSrcThumb}"> 
                 </a>
-                    <a href="${myProjects[i].githubLink}" class="button" target="_blank">Source Code</a>
+                    <a href="${"https://github.com/AbdulMoqueet/"+myProjects[i].githubLink}" class="button" target="_blank">Source Code</a>
                 </div>
             </div>
 
