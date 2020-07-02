@@ -260,7 +260,6 @@ $(document).ready(function () {
     });
 
     function skillsPogress(isProfessional) {
-        console.log("called");
         var i = 0;
         if (isProfessional) {
             $(".progress-container").each(function () {
