@@ -2,4 +2,4 @@
 
 # My Portfolio
 
-# live at: https:abdulmoqueet.github.io/
+live at: https://abdulmoqueet.github.io/
