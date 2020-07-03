@@ -171,7 +171,7 @@
     .container {
       font-size: 90%;
       .name {
-        font-size: 230%;
+        font-size: 220%;
       }
     }
 
@@ -352,4 +352,72 @@
       font-size: 60%;
     }
   }
+}
+
+@media screen and (min-height: 300px) and (max-height: 500px) {
+ 
+  header {
+    .container {
+      top: 55%;
+      font-size: 80%;
+      .i-am {
+        margin-bottom: .2rem;
+      }
+      .name {
+        font-size: 220%;
+        margin-bottom: .2rem;
+      }
+      .button{
+        margin-top: 1.5rem;
+      }
+    }
+
+    .discover {
+      right: 20px;
+      font-size: 60%;
+    }
+  }
+
+  .loader .text{
+    top: 70vh;
+  }
+
+  .sick-container{
+    top:40%;
+  }
+
+}
+
+@media screen and (min-height: 200px) and (max-height: 300px) {
+ 
+  header {
+    .container {
+      top: 60%;
+      font-size: 80%;
+      .i-am {
+        margin-bottom: .2rem;
+      }
+      .name {
+        font-size: 220%;
+        margin-bottom: .2rem;
+      }
+      .button{
+        margin-top: 1.5rem;
+      }
+    }
+
+    .discover {
+      right: 20px;
+      font-size: 60%;
+    }
+  }
+
+  .loader .text{
+    top: 60vh;
+  }
+
+  .sick-container{
+    top:40%;
+  }
+
 }
